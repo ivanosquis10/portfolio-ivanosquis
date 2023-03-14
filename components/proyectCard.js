@@ -1,18 +1,55 @@
 import Image from 'next/image'
 
-const ProyectCard = ({ proyecto }) => {
-  const { titulo, stack, image, github, demo } = proyecto
-  console.log(proyecto)
+const ProyectCard = ({ titulo, stack, image, github, demo }) => {
+  // const { titulo, stack, image, github, demo } = proyect
+  // console.log(image)
   // const { titulo, stack, image, descripcion, github, demo } = proyecto
   return (
-    <section>
-      <h1>{titulo}</h1>
-      <div className="flex gap-2">
-        {stack.map((c) => (
-          <p> {c} </p>
-        ))}
+    <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-3 w-full p-5 h-screen">
+      <div className="">
+        <div className="">
+          <a
+            className="cursor-pointer"
+            href="https://aesthetic-lolly-990a8f.netlify.app/"
+            target="_blank"
+          >
+            <Image
+              width={500}
+              height={400}
+              className="bg-cover rounded-xl"
+              src={image}
+              alt={`demo del proyecto ${titulo}`}
+              title="Demo del proyecto"
+            />
+          </a>
+        </div>
       </div>
-    </section>
+
+      <div className="flex flex-col justify-center gap-5">
+        <h3 className="text-3xl lg:text-5xl text-slate-100 font-bold uppercase">
+          {titulo}
+        </h3>
+        <p> aqui va la descripcion </p>
+
+        <div className="flex items-center gap-1">
+          {stack.map((stack) => (
+            <p className="border-2 border-green-600 text-base md:text-lg text-white font-bold px-1 rounded-md">
+              {stack}
+            </p>
+          ))}
+        </div>
+
+        <div className="">
+          <a href={github} target="_blank" title={`Repositorio del ${titulo}`}>
+            github
+          </a>
+
+          <a href={demo} target="_blank" title={`Demo del proyecto ${titulo}`}>
+            demo
+          </a>
+        </div>
+      </div>
+    </div>
   )
 }
 
