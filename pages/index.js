@@ -10,13 +10,14 @@ import Hero from '../components/hero'
 export default function Home() {
   return (
     <div className="container mx-auto text-white overflow-x-hidden">
-      <Header />
       <main>
-        <Hero />
         <Projects />
-        <Contact />
+        {/*
+          <Hero />
+          <Projects />
+          <Contact />
+          */}
       </main>
-      <Footer />
     </div>
   )
 }
