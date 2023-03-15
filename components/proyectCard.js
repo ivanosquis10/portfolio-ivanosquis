@@ -5,9 +5,9 @@ const ProyectCard = ({ titulo, stack, image, github, demo }) => {
   // console.log(image)
   // const { titulo, stack, image, descripcion, github, demo } = proyecto
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-3 w-full p-5 h-screen">
+    <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-3 w-full p-2 h-screen">
       <div className="">
-        <div className="">
+        <div>
           <a
             className="cursor-pointer"
             href="https://aesthetic-lolly-990a8f.netlify.app/"
@@ -25,15 +25,18 @@ const ProyectCard = ({ titulo, stack, image, github, demo }) => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center gap-5">
+      <div className="flex flex-col gap-5 w-full">
         <h3 className="text-3xl lg:text-5xl text-slate-100 font-bold uppercase">
           {titulo}
         </h3>
-        <p> aqui va la descripcion </p>
+        <p className="text-gray-400 text-xl">aqui va la descripcion </p>
 
         <div className="flex items-center gap-1">
           {stack.map((stack) => (
-            <p className="border-2 border-green-600 text-base md:text-lg text-white font-bold px-1 rounded-md">
+            <p
+              key={stack}
+              className="border-2 border-green-600 text-base md:text-lg text-white font-bold px-1 rounded-md"
+            >
               {stack}
             </p>
           ))}
