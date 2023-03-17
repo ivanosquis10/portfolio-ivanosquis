@@ -11,7 +11,7 @@ export default function Document() {
         <title>Ivanosquis - Portfolio</title>
         <link rel="icon" type="image/svg+xml" href="./logo-iv-3.svg" />
       </Head>
-      <body className="bg-slate-900 scroll-smooth">
+      <body className="bg-slate-900 scroll-smooth overflow-x-hidden">
         <Main />
         <NextScript />
       </body>

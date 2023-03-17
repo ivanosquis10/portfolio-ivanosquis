@@ -2,14 +2,14 @@ import { useState } from 'react'
 import Image from 'next/image'
 // imprt { Link } from 'react-scroll'
 
-const Header = () => {
+export default function Header() {
   const [menu, setMenu] = useState(false)
   const handleMobileMenu = () => setMenu(!menu)
 
   return (
     <header class="relative w-full" name="header" id="header">
       <nav className="fixed top-0 left-0 z-20 w-full px-6 transition-all duration-100 lg:px-12 py-3 shadow backdrop-blur bg-slate-800/20">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
           <div class="relative h-12 flex flex-col items-center xs:flex-row justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
               <button
@@ -132,4 +132,3 @@ const Header = () => {
   )
 }
 
-export default Header

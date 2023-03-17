@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
-const ProyectCard = ({ titulo, stack, image, github, demo, descripcion }) => {
+export default function ProyectCard({ titulo, stack, image, github, demo, descripcion }) {
   // const { titulo, stack, image, github, demo } = proyect
   // console.log(image)
   // const { titulo, stack, image, descripcion, github, demo } = proyecto
@@ -82,8 +81,6 @@ const ProyectCard = ({ titulo, stack, image, github, demo, descripcion }) => {
     </div>
   )
 }
-
-export default ProyectCard
 
 /* 
 <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-3 w-full p-2 h-screen">

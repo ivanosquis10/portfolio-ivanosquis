@@ -13,3 +13,23 @@ body {
   pointer-events: none;
   cursor: default;
 }
+
+.gradient {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(334deg, #1e293b, #0f172a, #1e293b);
+  background-size: 180% 180%;
+  animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

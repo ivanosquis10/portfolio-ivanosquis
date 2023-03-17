@@ -1,4 +1,3 @@
-import Layout from '../components/layout'
 import Header from '../components/header'
 // import AboutMe from './components/AboutMe'
 // import Skills from './components/Skills'
@@ -9,10 +8,13 @@ import Hero from '../components/hero'
 
 export default function Home() {
   return (
-    <div className="container mx-auto text-white overflow-x-hidden">
+    <div className="text-white overflow-x-hidden">
+      <Header />
       <main>
+        <Hero />
         <Projects />
         {/*
+          <Projects />
           <Hero />
           <Projects />
           <Contact />
