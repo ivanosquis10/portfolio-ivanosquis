@@ -5,7 +5,71 @@ const ProyectCard = ({ titulo, stack, image, github, demo }) => {
   // console.log(image)
   // const { titulo, stack, image, descripcion, github, demo } = proyecto
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-3 w-full p-2 h-screen">
+    <div className="flex flex-col w-10/12 rounded-md p-5 mb-5 bg-slate-800 hover:bg-slate-700/60 ease-in-out duration-300">
+      <div className="">
+        <a
+          className="cursor-pointer"
+          href="https://aesthetic-lolly-990a8f.netlify.app/"
+          target="_blank"
+        >
+          <Image
+            width={500}
+            height={400}
+            className="bg-cover rounded-xl"
+            src={image}
+            alt={`demo del proyecto ${titulo}`}
+            title="Demo del proyecto"
+          />
+        </a>
+      </div>
+
+      <div className="flex flex-col gap-5 w-full mt-5">
+        <div>
+          <h3 className="text-xl text-slate-100 font-bold uppercase">
+            {titulo}
+          </h3>
+          <p className="text-gray-400 text-lg">aqui va la descripcion </p>
+        </div>
+
+        <div className="flex items-center gap-1">
+          {stack.map((stack) => (
+            <p
+              key={stack}
+              className="text-base text-white font-bold px-2 rounded-lg bg-slate-600"
+            >
+              {stack}
+            </p>
+          ))}
+        </div>
+
+        <div className="flex gap-2 items-center">
+          <a
+            className="bg-slate-700 font-bold rounded-md px-2 py-1 text-xl"
+            href={github}
+            target="_blank"
+            title={`Repositorio del ${titulo}`}
+          >
+            github
+          </a>
+
+          <a
+            className="bg-slate-700 font-bold rounded-md px-2 py-1 text-xl"
+            href={demo}
+            target="_blank"
+            title={`Demo del proyecto ${titulo}`}
+          >
+            demo
+          </a>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default ProyectCard
+
+/* 
+<div className="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-3 w-full p-2 h-screen">
       <div className="">
         <div>
           <a
@@ -53,10 +117,8 @@ const ProyectCard = ({ titulo, stack, image, github, demo }) => {
         </div>
       </div>
     </div>
-  )
-}
 
-export default ProyectCard
+*/
 
 /*
 
