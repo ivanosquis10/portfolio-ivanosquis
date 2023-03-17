@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
-const ProyectCard = ({ titulo, stack, image, github, demo }) => {
+const ProyectCard = ({ titulo, stack, image, github, demo, descripcion }) => {
   // const { titulo, stack, image, github, demo } = proyect
   // console.log(image)
   // const { titulo, stack, image, descripcion, github, demo } = proyecto
   return (
-    <div className="flex flex-col w-10/12 rounded-md p-5 mb-5 bg-slate-800 hover:bg-slate-700/60 ease-in-out duration-300">
+    <div className="flex flex-col w-9/12 rounded-md p-5 mb-5 bg-slate-800 hover:bg-slate-700/60 ease-in-out duration-300">
       <div className="">
         <a
           className="cursor-pointer"
@@ -25,17 +26,19 @@ const ProyectCard = ({ titulo, stack, image, github, demo }) => {
 
       <div className="flex flex-col gap-5 w-full mt-5">
         <div>
-          <h3 className="text-xl text-slate-100 font-bold uppercase">
+          <h3 className="text-xl text-slate-100 font-bold uppercase mb-2">
             {titulo}
           </h3>
-          <p className="text-gray-400 text-lg">aqui va la descripcion </p>
+          <p className="text-gray-400 text-base tracking-tighter">
+            {descripcion}
+          </p>
         </div>
 
-        <div className="flex items-center gap-1">
+        <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-1 items-center py-1 text-center">
           {stack.map((stack) => (
             <p
               key={stack}
-              className="text-base text-white font-bold px-2 rounded-lg bg-slate-600"
+              className="text-sm text-white font-bold px-2 py-1 rounded-lg bg-slate-600"
             >
               {stack}
             </p>
@@ -44,21 +47,35 @@ const ProyectCard = ({ titulo, stack, image, github, demo }) => {
 
         <div className="flex gap-2 items-center">
           <a
-            className="bg-slate-700 font-bold rounded-md px-2 py-1 text-xl"
+            className="bg-slate-900 rounded-md px-2 py-1 cursor-pointer"
             href={github}
             target="_blank"
             title={`Repositorio del ${titulo}`}
           >
-            github
+            <Image
+              width={30}
+              height={30}
+              className="bg-cover"
+              src="/github.svg"
+              alt="logo github"
+              title="repositorio del proyecto"
+            />
           </a>
 
           <a
-            className="bg-slate-700 font-bold rounded-md px-2 py-1 text-xl"
+            className="bg-slate-900 rounded-md px-2 py-1 cursor-pointer"
             href={demo}
             target="_blank"
             title={`Demo del proyecto ${titulo}`}
           >
-            demo
+            <Image
+              width={30}
+              height={30}
+              className="bg-cover"
+              src="/demo.svg"
+              alt="logo demo del proyecto"
+              title="demo del proyecto"
+            />
           </a>
         </div>
       </div>
