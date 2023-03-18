@@ -36,7 +36,7 @@ export default function AboutMe() {
         <h3 className="text-2xl uppercase tracking-thighter w-fit mx-auto font-bold border-dashed border-b-4 border-green-500 ">
           Mis habilidades
         </h3>
-        <div className="grid grid-cols-4 md:grid-cols-6 gap-3 lg:gap-0 lg:grid-cols-11 justify-items-center">
+        <div className="grid grid-cols-4 md:grid-cols-6 gap-3 lg:gap-0 lg:grid-cols-11 justify-items-center px-5 lg:px-0">
           <Skills img="/skillsImg/html.svg" nombre="html" />
           <Skills img="/skillsImg/css.svg" nombre="css" />
           <Skills img="/skillsImg/js.svg" nombre="javascript" />
