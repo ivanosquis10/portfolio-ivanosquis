@@ -18,7 +18,7 @@ export default function AboutMe() {
         />
 
         <div className="p-10 flex flex-col items-center gap-5 col-span-2">
-          <h3 className="text-slate-300 font-thin text-xl tracking-widest">
+          <h3 className="text-slate-300 font-thin text-base lg:text-xl tracking-widest">
             Me llamo <span className="font-black text-green-500">Iván</span> y
             tengo 22 años de edad y soy de Venezuela.
           </h3>

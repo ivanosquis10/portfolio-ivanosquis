@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { FaTwitter, FaGithub, FaDiscord, FaArrowUp } from 'react-icons/fa'
 
 export default function Footer() {
