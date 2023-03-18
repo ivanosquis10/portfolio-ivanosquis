@@ -22,20 +22,32 @@ export default function AboutMe() {
             Me llamo <span className="font-black text-green-500">Iván</span> y
             tengo 22 años de edad y soy de Venezuela.
           </h3>
-          <p className="text-xl text-slate-300 font-thin tracking-widest">
+          <p className="text-base lg:text-xl text-slate-300 font-thin tracking-widest">
             Soy graduado en informática y autodidacta los 365 días del año.
           </p>
 
-          <p className="text-xl text-slate-300 font-thin tracking-thighter lg:tracking-widest">
+          <p className="text-base lg:text-xl text-slate-300 font-thin tracking-thighter lg:tracking-widest">
             Me encanta aprender e intentar ser mejor todos los días.
           </p>
         </div>
       </div>
 
-      <div>
-        <h3>Mis habilidades</h3>
-        <div>
-          <Skills img='/skillsImg/css.svg' nombre='css' />
+      <div className="text-center mt-8 space-y-10">
+        <h3 className="text-2xl uppercase tracking-thighter w-fit mx-auto font-bold border-dashed border-b-4 border-green-500 ">
+          Mis habilidades
+        </h3>
+        <div className="grid grid-cols-4 md:grid-cols-6 gap-3 lg:gap-0 lg:grid-cols-11 justify-items-center">
+          <Skills img="/skillsImg/html.svg" nombre="html" />
+          <Skills img="/skillsImg/css.svg" nombre="css" />
+          <Skills img="/skillsImg/js.svg" nombre="javascript" />
+          <Skills img="/skillsImg/react.svg" nombre="react" />
+          <Skills img="/skillsImg/tailwind.svg" nombre="tailwindcss" />
+          <Skills img="/skillsImg/nextjs.svg" nombre="nextjs" />
+          <Skills img="/skillsImg/vitejs.svg" nombre="vitejs" />
+          <Skills img="/skillsImg/node.svg" nombre="node" />
+          <Skills img="/skillsImg/supabase.svg" nombre="supabase" />
+          <Skills img="/skillsImg/terminal.svg" nombre="terminal" />
+          <Skills img="/skillsImg/git.svg" nombre="git" />
         </div>
       </div>
     </section>
