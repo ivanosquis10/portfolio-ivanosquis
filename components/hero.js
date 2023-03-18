@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { FaGithub } from 'react-icons/fa'
 
 export default function Hero() {
   return (
@@ -27,30 +28,24 @@ export default function Hero() {
 
         <div className="flex items-center gap-2">
           <a
-            className="w-full text-xl p-1 rounded-md shadow shadow-green-900 font-bold text-slate-200 text-center ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50 hover:text-green-500 bg-slate-900 rounded-md px-2 py-1 cursor-pointer"
+            className="w-full text-xl p-1 rounded-md  font-bold text-slate-200 text-center ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50 hover:text-green-500 bg-slate-900 rounded-md px-2 py-1 cursor-pointer"
             href="#proyectos"
           >
             Proyectos
           </a>
 
           <a
-            className="w-full text-xl p-1 rounded-md shadow shadow-green-900 font-bold text-slate-200 text-center ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50 hover:text-green-500 bg-slate-900 rounded-md px-2 py-1 cursor-pointer"
+            className="w-full text-xl p-1 rounded-md font-bold text-slate-200 text-center ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50 hover:text-green-500 bg-slate-900 rounded-md px-2 py-1 cursor-pointer"
             href="#contacto"
           >
             Contáctame
           </a>
           <a
-            className="w-full p-1 rounded-md shadow shadow-green-900 ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50"
+            className="w-full p-1 bg-slate-900 rounded-md  ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50"
             href="https://github.com/ivanosquis10"
             target="_blank"
           >
-            <Image
-              width={30}
-              height={30}
-              className="bg-cover"
-              src="/github.svg"
-              alt="logo github"
-            />
+            <FaGithub size={25} color="#e2e8f0" />
           </a>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { FaTwitter, FaGithub, FaDiscord, FaArrowUp } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -16,48 +17,33 @@ export default function Footer() {
         <div className="flex items-center justify-end gap-x-3">
           <a
             href="https://twitter.com/ivanosquis13"
-            className="p-1 rounded-md shadow shadow-green-900 ease-in-out duration-300 hover:cursor-pointer"
+            className="p-1 rounded-md bg-slate-700 hover:cursor-pointer"
             target="_blank"
           >
-            <Image
-              width={30}
-              height={30}
-              className="bg-cover"
-              src="/twitter.svg"
-              alt="logo twitter"
-            />
+            <FaTwitter size={25} />
           </a>
 
           <a
-            className="p-1 rounded-md shadow shadow-green-900 ease-in-out duration-300 hover:cursor-pointer"
+            className="p-1 rounded-md bg-slate-700 hover:cursor-pointer"
             href="https://github.com/ivanosquis10"
             target="_blank"
           >
-            <Image
-              width={30}
-              height={30}
-              className="bg-cover"
-              src="/github.svg"
-              alt="logo github"
-            />
+            <FaGithub size={25} />
           </a>
 
           <a
             href="https://discordapp.com/users/Ivanosquis10#5178"
-            className="p-1 rounded-md shadow shadow-green-900 ease-in-out duration-300 hover:cursor-pointer"
+            className="p-1 rounded-md bg-slate-700 hover:cursor-pointer"
             target="_blank"
           >
-            <Image
-              width={30}
-              height={30}
-              className="bg-cover fill-white"
-              src="/discord.svg"
-              alt="logo discord"
-            />
+            <FaDiscord size={25} />
           </a>
-          <div>
-            <a>pa arriba</a>
-          </div>
+          <a
+            href="#header"
+            className="p-1 rounded-md bg-slate-700 hover:cursor-pointer"
+          >
+            <FaArrowUp size={25} />
+          </a>
         </div>
       </div>
     </footer>

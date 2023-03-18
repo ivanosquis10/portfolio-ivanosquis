@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { FaGithub, FaShare } from 'react-icons/fa'
 
 export default function ProyectCard({
   titulo,
@@ -43,35 +44,21 @@ export default function ProyectCard({
 
         <div className="flex items-center mt-4 text-gray-700 gap-2">
           <a
-            className="bg-gray-900 rounded-md px-2 py-1 cursor-pointer"
+            className="bg-gray-900 rounded-md px-2 py-2 cursor-pointer"
             href={github}
             target="_blank"
             title={`Repositorio del ${titulo}`}
           >
-            <Image
-              width={30}
-              height={30}
-              className="bg-cover"
-              src="/github.svg"
-              alt="logo github"
-              title="repositorio del proyecto"
-            />
+            <FaGithub size={25} color="#94a3b8" />
           </a>
 
           <a
-            className="bg-gray-900 rounded-md px-2 py-1 cursor-pointer"
+            className="bg-gray-900 rounded-md px-2 py-2 cursor-pointer"
             href={demo}
             target="_blank"
             title={`Demo del proyecto ${titulo}`}
           >
-            <Image
-              width={30}
-              height={30}
-              className="bg-cover"
-              src="/demo.svg"
-              alt="logo demo del proyecto"
-              title="demo del proyecto"
-            />
+            <FaShare size={25} color="#94a3b8" />
           </a>
         </div>
       </div>
