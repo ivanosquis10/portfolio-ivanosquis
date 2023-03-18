@@ -81,28 +81,21 @@ export default function Header() {
                     className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
                     href="#aboutme"
                   >
-                    About
-                  </a>
-
-                  <a
-                    className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
-                    href="#aboutme"
-                  >
-                    Skills
+                    Sobre mí
                   </a>
 
                   <a
                     className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
                     href="#proyectos"
                   >
-                    Projects
+                    Proyectos
                   </a>
 
                   <a
                     className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
                     href="#contacto"
                   >
-                    Contact
+                    Contacto
                   </a>
                 </div>
               </div>
@@ -125,19 +118,15 @@ export default function Header() {
             </a>
 
             <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
-              About
+              sobre mí
             </a>
 
             <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
-              Skills
+              Proyectos
             </a>
 
             <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
-              Projects
-            </a>
-
-            <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
-              Contact
+              Contacto
             </a>
           </div>
         </div>

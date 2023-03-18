@@ -5,13 +5,13 @@ export default function Proyects() {
     <section>
       <div
         id="proyectos"
-        className="container mx-auto flex justify-center items-center"
+        className="container mx-auto flex justify-center items-center mb-10"
       >
         <div className="mx-auto max-w-5xl mt-20">
           <h2 className="text-center text-5xl my-5 font-bold tracking-tighter border-dashed border-b-4 rounded border-green-500 w-fit mx-auto">
             My Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center p-5 place-content-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-5 p-5 place-content-center">
             <ProyectCard
               titulo="GuitarLA"
               descripcion="Página de compras de Guitarras y cursos de música"

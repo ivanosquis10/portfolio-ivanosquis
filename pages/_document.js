@@ -10,7 +10,7 @@ export default function Document() {
         />
         <link rel="icon" type="image/svg+xml" href="./logo-iv-3.svg" />
       </Head>
-      <body className="bg-slate-900 overflow-x-hidden">
+      <body className="bg-slate-900 h-full overflow-x-hidden">
         <Main />
         <NextScript />
       </body>

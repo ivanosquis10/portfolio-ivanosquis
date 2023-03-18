@@ -1,10 +1,10 @@
 import Header from '../components/header'
-// import AboutMe from './components/AboutMe'
 // import Skills from './components/Skills'
 import Projects from '../components/proyects'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
 import Hero from '../components/hero'
+import AboutMe from '../components/aboutMe'
 
 export default function Home() {
   return (
@@ -13,12 +13,7 @@ export default function Home() {
       <main>
         <Hero />
         <Projects />
-        {/*
-          <Projects />
-          <Hero />
-          <Projects />
-          <Contact />
-          */}
+        <AboutMe />
       </main>
     </div>
   )
