@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { FaGithub } from 'react-icons/fa'
 
 export default function Hero() {
@@ -52,35 +51,3 @@ export default function Hero() {
     </section>
   )
 }
-
-/*
-   <div className="flex items-center gap-2">
-          <a
-            className="w-full text-xl bg-green-600/80 p-1 rounded-md shadow shadow-green-900 font-bold text-slate-200 text-center ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50 hover:text-green-500"
-            href="#proyectos"
-          >
-            Proyectos
-          </a>
-
-          <a
-            className="w-full text-xl bg-green-600/80 p-1 rounded-md shadow shadow-green-900 font-bold text-slate-200 text-center ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50 hover:text-green-500"
-            href="#contacto"
-          >
-            Contáctame
-          </a>
-          <a
-            className="w-full p-1 rounded-md shadow shadow-green-900 ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50"
-            href="https://github.com/ivanosquis10"
-            target="_blank"
-          >
-            <Image
-              width={30}
-              height={30}
-              className="bg-cover"
-              src="/github.svg"
-              alt="logo github"
-            />
-          </a>
-        </div>
-
-*/

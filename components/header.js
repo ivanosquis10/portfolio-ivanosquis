@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Image from 'next/image'
-// imprt { Link } from 'react-scroll'
 
 export default function Header() {
   const [menu, setMenu] = useState(false)
