@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Skills from './skills'
 
 export default function AboutMe() {
   return (
@@ -28,6 +29,13 @@ export default function AboutMe() {
           <p className="text-xl text-slate-300 font-thin tracking-thighter lg:tracking-widest">
             Me encanta aprender e intentar ser mejor todos los días.
           </p>
+        </div>
+      </div>
+
+      <div>
+        <h3>Mis habilidades</h3>
+        <div>
+          <Skills img='/skillsImg/css.svg' nombre='css' />
         </div>
       </div>
     </section>
