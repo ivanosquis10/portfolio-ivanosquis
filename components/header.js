@@ -55,7 +55,7 @@ export default function Header() {
             <div class="lg:w-full flex items-center justify-between">
               {/* logo */}
               <div class="flex flex-shrink-0 items-center sm:items-stretch cursor-pointer">
-                <a>
+                <a href="#header">
                   <Image
                     width={50}
                     height={50}
@@ -72,23 +72,36 @@ export default function Header() {
                   <a
                     className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
                     aria-current="page"
+                    href="#header"
                   >
                     Home
                   </a>
 
-                  <a className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300">
+                  <a
+                    className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
+                    href="#aboutme"
+                  >
                     About
                   </a>
 
-                  <a className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300">
+                  <a
+                    className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
+                    href="#aboutme"
+                  >
                     Skills
                   </a>
 
-                  <a className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300">
+                  <a
+                    className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
+                    href="#proyectos"
+                  >
                     Projects
                   </a>
 
-                  <a className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300">
+                  <a
+                    className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
+                    href="#contacto"
+                  >
                     Contact
                   </a>
                 </div>
@@ -106,6 +119,7 @@ export default function Header() {
             <a
               className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700"
               aria-current="page"
+              href="#header"
             >
               Home
             </a>
