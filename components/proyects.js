@@ -1,15 +1,13 @@
-import { data } from '../data/data'
 import ProyectCard from './proyectCard'
-import Image from 'next/image'
 
 export default function Proyects() {
   return (
     <section>
       <div
-        id="projects"
+        id="proyectos"
         className="container mx-auto flex justify-center items-center"
       >
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-5xl mt-20">
           <h2 className="text-center text-5xl my-5 font-bold tracking-tighter border-dashed border-b-4 rounded border-green-500 w-fit mx-auto">
             My Projects
           </h2>

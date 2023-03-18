@@ -7,6 +7,7 @@
 html,
 body {
   font-family: 'JetBrains Mono', 'Roboto', monospace;
+  scroll-behavior: smooth;
 }
 
 .not-active {

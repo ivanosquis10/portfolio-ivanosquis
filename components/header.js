@@ -68,27 +68,27 @@ export default function Header() {
 
               {/* links */}
               <div class="hidden sm:ml-6 sm:block">
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4 text-lg">
                   <a
-                    className="text-white py-1 px-2 shadow rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300"
+                    className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
                     aria-current="page"
                   >
                     Home
                   </a>
 
-                  <a className="text-white py-1 px-2 shadow rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300">
+                  <a className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300">
                     About
                   </a>
 
-                  <a className="text-white py-1 px-2 shadow rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300">
+                  <a className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300">
                     Skills
                   </a>
 
-                  <a className="text-white py-1 px-2 shadow rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300">
+                  <a className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300">
                     Projects
                   </a>
 
-                  <a className="text-white py-1 px-2 shadow rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300">
+                  <a className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300">
                     Contact
                   </a>
                 </div>
@@ -104,25 +104,25 @@ export default function Header() {
         >
           <div class="space-y-4 px-2 pt-2 pb-3 text-center mt-5">
             <a
-              className="block text-white py-1 px-2 hover:bg-slate-800/50 shadow shadow-green-800/80 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300"
+              className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700"
               aria-current="page"
             >
               Home
             </a>
 
-            <a className="block text-white py-1 px-2 hover:bg-slate-800/50 shadow shadow-green-800/80 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300">
+            <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
               About
             </a>
 
-            <a className="block text-white py-1 px-2 hover:bg-slate-800/50 shadow shadow-green-800/80 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300">
+            <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
               Skills
             </a>
 
-            <a className="block text-white py-1 px-2 hover:bg-slate-800/50 shadow shadow-green-800/80 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300">
+            <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
               Projects
             </a>
 
-            <a className="block text-white py-1 px-2 hover:bg-slate-800/50 shadow shadow-green-800/80 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300">
+            <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
               Contact
             </a>
           </div>
@@ -131,4 +131,3 @@ export default function Header() {
     </header>
   )
 }
-
