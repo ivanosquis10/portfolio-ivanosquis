@@ -2,7 +2,7 @@ import { FaGithub } from 'react-icons/fa'
 
 export default function Hero() {
   return (
-    <section className="min-h-full h-screen grid place-content-center gradient">
+    <section className="gradient min-h-full h-screen grid place-content-center">
       <div className="max-w-full px-5 flex flex-col items-center text-center">
         <div className="flex flex-col lg:items-center">
           <div>
