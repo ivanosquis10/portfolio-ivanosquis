@@ -11,7 +11,7 @@ export default function ProyectCard({
 }) {
   return (
     <div className="flex flex-col justify-between max-w-sm mx-auto rounded-lg shadow-xl bg-slate-800 hover:bg-slate-700/60 ease-in-out duration-300">
-      <div className="">
+      {/*<div className="">
         <a className="cursor-pointer" href={demo} target="_blank">
           <Image
             width={400}
@@ -22,8 +22,9 @@ export default function ProyectCard({
             title="Demo del proyecto"
           />
         </a>
-      </div>
-      <div className="bg-gray-900 mx-4 rounded-lg flex items-center gap-2 -mt-4 z-10 shadow-xl py-2 px-6">
+  </div> */}
+
+      <div className="bg-gray-700 mx-4 rounded-lg flex items-center gap-2 -mt-4 z-10 shadow-xl py-2 px-6">
         <h3 className="text-white text-xl font-bold uppercase">{titulo}</h3>
       </div>
       <div className="px-6 py-4 flex flex-col gap-2">
