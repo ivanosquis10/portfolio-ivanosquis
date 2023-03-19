@@ -16,18 +16,18 @@ export default function Proyects() {
               titulo="GuitarLA"
               descripcion="Página de compras de Guitarras y cursos de música"
               stack={['React', 'NextJS', 'Supabase', 'Tailwindcss']}
-              image="/img/gastos.png"
-              github="https://github.com/ivanosquis10/control-presupuesto-proyecto"
-              demo="https://aesthetic-lolly-990a8f.netlify.app/"
+              image="/img/guitarla.png"
+              github="https://github.com/ivanosquis10/guitarla-supabase-proyecto"
+              demo="https://guitarla-supabase-proyecto.vercel.app/"
             />
 
             <ProyectCard
               titulo="Quiosco comida"
               descripcion="Página de compras de platillos de comida con carrito de compras"
               stack={['React', 'NextJS', 'Supabase', 'Tailwindcss']}
-              image="/img/gastos.png"
-              github="https://github.com/ivanosquis10/control-presupuesto-proyecto"
-              demo="https://aesthetic-lolly-990a8f.netlify.app/"
+              image="/img/quiosco.png"
+              github="https://github.com/ivanosquis10/quiosco-tienda-supabase"
+              demo="https://quiosco-tienda-supabase.vercel.app/"
             />
 
             <ProyectCard
@@ -52,7 +52,7 @@ export default function Proyects() {
               titulo="crud pacientes"
               descripcion="Página para llevar el control de pacientes veterinarios"
               stack={['React', 'ViteJS', 'Tailwindcss']}
-              image="/img/gastos.png"
+              image="/img/todoapp.png"
               github="https://github.com/ivanosquis10/patients-crud-react-udemy"
               demo="https://cute-unicorn-4c9a71.netlify.app/"
             />
@@ -61,7 +61,7 @@ export default function Proyects() {
               titulo="cotizador seguros autos"
               descripcion="Cotiza el valor de seguros de autos dependiendo del modelo y año"
               stack={['React', 'ViteJS', 'Tailwindcss']}
-              image="/img/gastos.png"
+              image="/img/cotizadorcarros.png"
               github="https://github.com/ivanosquis10/autoinsurance-quotes-project"
               demo="https://autoinsurance-quotes-ivanosquis.vercel.app/"
             />

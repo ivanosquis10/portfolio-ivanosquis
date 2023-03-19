@@ -10,8 +10,8 @@ export default function ProyectCard({
   descripcion,
 }) {
   return (
-    <div className="flex flex-col max-w-sm mx-auto rounded-lg shadow-xl bg-slate-800 hover:bg-slate-700/60 ease-in-out duration-300">
-      <div>
+    <div className="flex flex-col justify-between max-w-sm mx-auto rounded-lg shadow-xl bg-slate-800 hover:bg-slate-700/60 ease-in-out duration-300">
+      <div className="">
         <a className="cursor-pointer" href={demo} target="_blank">
           <Image
             width={400}
