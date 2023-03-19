@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="gradient min-h-full h-screen grid place-content-center">
       <div className="max-w-full px-5 flex flex-col items-center text-center">
         <div className="flex flex-col lg:items-center">
-          <div>
+          <div className="">
             <p className="mt-3 mb-3 text-2xl lg:text-3xl font-thin tracking-tight text-white">
               Bienvenido, soy
             </p>
