@@ -25,7 +25,7 @@ export default function Proyects() {
               titulo="Quiosco comida"
               descripcion="Página de compras de platillos de comida con carrito de compras"
               stack={['React', 'NextJS', 'Supabase', 'Tailwindcss']}
-              image="/img/quiosco.png"
+              image="/img/quioscoo.png"
               github="https://github.com/ivanosquis10/quiosco-tienda-supabase"
               demo="https://quiosco-tienda-supabase.vercel.app/"
             />
@@ -43,7 +43,7 @@ export default function Proyects() {
               titulo="cotizador criptomonedas"
               descripcion="Cotiza el valor de tus cripto monedas preferidas con está app"
               stack={['React', 'Router DOM', 'styledComp']}
-              image="/img/gastos.png"
+              image="/img/cripto.png"
               github="https://github.com/ivanosquis10/proyecto-cotizacion-crypto"
               demo="https://cerulean-cucurucho-e6c6c9.netlify.app/"
             />
@@ -52,7 +52,7 @@ export default function Proyects() {
               titulo="crud pacientes"
               descripcion="Página para llevar el control de pacientes veterinarios"
               stack={['React', 'ViteJS', 'Tailwindcss']}
-              image="/img/todoapp.png"
+              image="/img/pacientes.png"
               github="https://github.com/ivanosquis10/patients-crud-react-udemy"
               demo="https://cute-unicorn-4c9a71.netlify.app/"
             />
