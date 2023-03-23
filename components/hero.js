@@ -5,16 +5,16 @@ export default function Hero() {
     <section className="gradient min-h-full h-screen grid place-content-center">
       <div className="max-w-full px-5 flex flex-col items-center text-center">
         <div className="flex flex-col lg:items-center">
-          <div className="">
+          <div>
             <p className="mt-3 mb-3 text-2xl lg:text-3xl font-thin tracking-tight text-white">
               Bienvenido, soy
             </p>
-            <h1 className="text-green-500 font-bold text-5xl lg:text-7xl tracking-tight mb-1">
+            <h1 className="text-green-500 font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight mb-1">
               Iván Rodríguez
             </h1>
           </div>
 
-          <p className="text-2xl lg:text-3xl font-black lg:tracking-tighter text-slate-100 mb-3">
+          <p className="text-xl lg:text-3xl font-black lg:tracking-tighter text-slate-100 mb-3">
             Frontend Developer React
           </p>
           <div>
