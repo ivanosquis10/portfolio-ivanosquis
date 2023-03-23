@@ -14,7 +14,7 @@ export default function Hero() {
             </h1>
           </div>
 
-          <p className="text-xl lg:text-3xl font-black lg:tracking-tighter text-slate-100 mb-3">
+          <p className="text-xl lg:text-3xl font-black tracking-tighter text-slate-100 mb-3">
             Frontend Developer React
           </p>
           <div>
