@@ -60,7 +60,7 @@ export default function Header() {
                     height={50}
                     src="./logo-iv-3.svg"
                     alt="logo del portafolio"
-                    priority
+                    priority={true}
                   />
                 </a>
               </div>
