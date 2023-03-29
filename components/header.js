@@ -104,7 +104,7 @@ export default function Header() {
 
         {/* menu mobile */}
         <div
-          className={`${!menu ? 'hidden' : 'block'} h-max sm:hidden `}
+          className={`${!menu ? 'hidden' : 'block'} h-screen sm:hidden`}
           id="mobile-menu"
         >
           <div className="space-y-4 px-2 pt-2 pb-3 text-center mt-5">
