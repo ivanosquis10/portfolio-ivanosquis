@@ -59,7 +59,7 @@ export default function Header() {
                     width={50}
                     height={50}
                     src="./logo-iv-3.svg"
-                    alt="logo del portafolio"
+                    alt="logo de mi portafolio"
                     priority={true}
                   />
                 </a>
@@ -107,7 +107,7 @@ export default function Header() {
           className={`${!menu ? 'hidden' : 'block'} h-screen sm:hidden`}
           id="mobile-menu"
         >
-          <div className="space-y-4 px-2 pt-2 pb-3 text-center mt-5">
+          <div className="space-y-4 px-2 pt-2 pb-3 text-center mt-8 text-2xl flex flex-col gap-8">
             <a
               className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700"
               aria-current="page"
@@ -116,15 +116,24 @@ export default function Header() {
               Home
             </a>
 
-            <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
-              sobre mí
-            </a>
-
-            <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
+            <a
+              className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700"
+              href="#proyectos"
+            >
               Proyectos
             </a>
 
-            <a className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700">
+            <a
+              className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700"
+              href="#aboutme"
+            >
+              Sobre mí
+            </a>
+
+            <a
+              className="block text-white py-1 px-2 hover:bg-slate-800 rounded-md font-bold hover:cursor-pointer hover:text-green-500 ease-in-out duration-300 border-b border-green-700"
+              href="#contacto"
+            >
               Contacto
             </a>
           </div>

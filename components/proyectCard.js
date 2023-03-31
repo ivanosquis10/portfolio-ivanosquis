@@ -4,7 +4,6 @@ import { FaGithub, FaShare } from 'react-icons/fa'
 export default function ProyectCard({
   titulo,
   stack,
-  image,
   github,
   demo,
   descripcion,

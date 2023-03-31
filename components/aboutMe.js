@@ -3,7 +3,7 @@ import Skills from './skills'
 
 export default function AboutMe() {
   return (
-    <section className="mx-auto max-w-4xl my-20">
+    <section id='aboutme' className="mx-auto max-w-4xl my-20">
       <h2 className="text-center text-5xl font-bold tracking-tighter border-dashed border-b-4 rounded border-green-500 w-fit mx-auto mb-10">
         Sobre mí
       </h2>
