@@ -18,9 +18,9 @@ export default function Hero() {
             Frontend Developer React
           </p>
           <div>
-            <p className="lg:text-center w-full lg:w-8/12 mx-auto mt-2 mb-5 text-base lg:text-lg leading-relaxed text-slate-200 md:tracking-tight">
+            <p className="lg:text-center w-full md:w-8/12 mx-auto mt-2 mb-5 text-base lg:text-lg leading-relaxed text-slate-200 md:tracking-tight">
               Tengo 22 años de edad y soy una persona muy proactiva, con ganas
-              de aprender y mejorar cada día más.
+              de aprender, mejorar cada día más y superarme
             </p>
           </div>
         </div>

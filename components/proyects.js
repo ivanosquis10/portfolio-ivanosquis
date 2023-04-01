@@ -12,6 +12,7 @@ export default function Proyects() {
             My Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-10 p-5 place-content-center">
+            
             <ProyectCard
               titulo="GuitarLA"
               descripcion="Página de compras de Guitarras y cursos de música"

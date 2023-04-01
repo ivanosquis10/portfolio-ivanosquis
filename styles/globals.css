@@ -34,3 +34,8 @@ body {
     background-position: 0% 50%;
   }
 }
+
+.active {
+  color: #22c55e;
+  font-weight: 900;
+}

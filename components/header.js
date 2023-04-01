@@ -59,7 +59,7 @@ export default function Header() {
                     width={50}
                     height={50}
                     src="./logo-iv-3.svg"
-                    alt="logo de mi portafolio"
+                    alt="logo de mi portafolio ivanosquis"
                     priority={true}
                   />
                 </a>
@@ -78,16 +78,16 @@ export default function Header() {
 
                   <a
                     className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
-                    href="#aboutme"
+                    href="#proyectos"
                   >
-                    Sobre mí
+                    Proyectos
                   </a>
 
                   <a
                     className="text-white py-1 px-2 rounded-md font-bold hover:cursor-pointer hover:text-green-500 hover:shadow ease-in-out duration-300"
-                    href="#proyectos"
+                    href="#aboutme"
                   >
-                    Proyectos
+                    Sobre mí
                   </a>
 
                   <a

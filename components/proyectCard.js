@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { FaGithub, FaShare } from 'react-icons/fa'
 
 export default function ProyectCard({
