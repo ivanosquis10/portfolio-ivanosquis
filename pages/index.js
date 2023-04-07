@@ -7,7 +7,7 @@ import Footer from '../components/footer'
 
 export default function Home() {
   return (
-    <div className="text-white overflow-x-hidden">
+    <div className='text-white overflow-x-hidden'>
       <Header />
       <main>
         <Hero />
