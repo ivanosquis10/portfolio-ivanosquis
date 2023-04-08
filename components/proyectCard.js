@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { FaGithub, FaShare } from 'react-icons/fa'
 
 export default function ProyectCard({
@@ -10,9 +11,11 @@ export default function ProyectCard({
 }) {
   return (
     <div className='flex flex-col justify-between max-w-sm mx-auto rounded-lg shadow-xl bg-slate-800 hover:bg-slate-700/60 ease-in-out duration-300 p-1'>
-      <img
+      <Image
         src={image}
-        alt='Usuario'
+        alt={`Imagen del proyecto ${titulo}`}
+        width={150}
+        height={100}
         className='w-full object-cover rounded-md'
       />
       <div className='bg-gray-700 mx-4 rounded-lg flex items-center gap-2 -mt-4 z-10 shadow-xl py-2 px-6'>
