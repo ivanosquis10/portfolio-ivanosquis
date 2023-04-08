@@ -15,10 +15,12 @@ body {
   cursor: default;
 }
 
+/* 406aae */
+
 .gradient {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(334deg, #0f172a, #334155, #0f172a);
+  background: linear-gradient(334deg, #0f172a, #0f172a, #40ae5f);
   background-size: 180% 180%;
   animation: gradient-animation 6s ease infinite;
 }
