@@ -16,7 +16,7 @@ export default function Proyects() {
               titulo='GuitarLA'
               descripcion='Página de compras de Guitarras y cursos de música'
               stack={['React', 'NextJS', 'Supabase', 'Tailwindcss']}
-              image='/img/guitarla.PNG'
+              image='/img/guitarla.webp'
               github='https://github.com/ivanosquis10/guitarla-supabase-proyecto'
               demo='https://guitarla-supabase-proyecto.vercel.app/'
             />
