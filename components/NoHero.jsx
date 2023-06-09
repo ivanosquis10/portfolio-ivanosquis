@@ -1,0 +1,53 @@
+import { FaGithub } from 'react-icons/fa'
+
+export function NoHero () {
+  return (
+    <section className="gradient min-h-full h-screen grid place-content-center">
+      <div className="max-w-full px-5 flex flex-col items-center text-center">
+        <div className="flex flex-col lg:items-center">
+          <div>
+            <p className="mt-3 mb-3 text-2xl lg:text-3xl font-thin tracking-tight text-white">
+              Bienvenido, soy
+            </p>
+            <h1 className="text-green-500 font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight mb-1">
+              Iván Rodríguez
+            </h1>
+          </div>
+
+          <p className="text-xl lg:text-3xl font-black tracking-tighter text-slate-100 mb-3">
+            Frontend Developer React
+          </p>
+          <div>
+            <p className="lg:text-center w-full md:w-8/12 mx-auto mt-2 mb-5 text-base lg:text-lg leading-relaxed text-slate-200 md:tracking-tight font-light">
+              Tengo 22 años de edad y soy una persona muy proactiva, con ganas
+              de aprender, mejorar cada día más y superarme
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <a
+            className="w-full text-xl p-1  font-bold text-slate-200 text-center ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50 hover:text-green-500 bg-slate-900 rounded-md px-2 py-1 cursor-pointer"
+            href="#proyectos"
+          >
+            Proyectos
+          </a>
+
+          <a
+            className="w-full text-xl p-1 font-bold text-slate-200 text-center ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50 hover:text-green-500 bg-slate-900 rounded-md px-2 py-1 cursor-pointer"
+            href="#contacto"
+          >
+            Contáctame
+          </a>
+          <a
+            className="w-full p-1 bg-slate-900 rounded-md  ease-in-out duration-300 hover:cursor-pointer hover:bg-slate-800/50"
+            href="https://github.com/ivanosquis10"
+            target="_blank" rel="noreferrer"
+          >
+            <FaGithub size={25} color="#e2e8f0" />
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}

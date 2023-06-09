@@ -1,21 +1,30 @@
 {
-  "name": "next-app",
+  "name": "ivan-rodriguez-portofolio-nextjs",
   "version": "0.1.0",
   "private": true,
+  "author": "Iván Rodríguez",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint \"./**/*.{js,jsx}\""
   },
   "dependencies": {
-    "next": "^13.0.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
+    "next": "13.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "4.8.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7"
+    "autoprefixer": "10.4.13",
+    "eslint": "8.42.0",
+    "eslint-config-standard": "17.1.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-n": "16.0.0",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.32.2",
+    "postcss": "8.4.21",
+    "standard": "17.1.0",
+    "tailwindcss": "3.2.7"
   }
 }

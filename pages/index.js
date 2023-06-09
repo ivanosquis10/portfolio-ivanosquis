@@ -1,21 +1,19 @@
-import Header from '../components/header'
-import Hero from '../components/hero'
-import Projects from '../components/proyects'
-import AboutMe from '../components/aboutMe'
-import Contact from '../components/contact'
-import Footer from '../components/footer'
+import { Seo, Header, Hero, Proyects, AboutMe, Contact, Footer } from '../components'
 
-export default function Home() {
+export default function Home () {
   return (
+    <>
+    <Seo />
     <div className='text-white overflow-x-hidden'>
       <Header />
       <main>
         <Hero />
-        <Projects />
+        <Proyects />
         <AboutMe />
         <Contact />
       </main>
       <Footer />
     </div>
+    </>
   )
 }
