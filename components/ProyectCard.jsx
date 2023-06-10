@@ -10,7 +10,7 @@ export function ProyectCard ({
   descripcion
 }) {
   return (
-    <div className='flex flex-col justify-between max-w-sm mx-auto rounded-lg bg-slate-900 ease-in-out duration-300 p-1 border border-green-500/ñ30 relative'>
+    <div className='flex flex-col justify-between max-w-sm mx-auto rounded-lg bg-slate-900 ease-in-out duration-300 p-1 border border-green-500/30 relative'>
       <Image
         src={image}
         alt={`Imagen del proyecto ${titulo}`}
