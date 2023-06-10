@@ -31,7 +31,7 @@ export function Hero () {
             <div>
 
             <p className="text-start w-full my-5 text-base lg:text-lg leading-relaxed text-white md:tracking-wider font-light">
-                Desarrollador web apasionado apasionado por la creación de sitios y aplicaciones web que brinden una experiencia única al usuario.<br/>
+                Desarrollador web apasionado por la creación de sitios y aplicaciones web que brinden una experiencia única al usuario.<br/>
                 Proactivo, con ganas
                 de aprender, mejorar cada día y superarme.
               </p>

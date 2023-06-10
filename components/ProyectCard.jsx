@@ -10,7 +10,7 @@ export function ProyectCard ({
   descripcion
 }) {
   return (
-    <div className='flex flex-col justify-between max-w-sm mx-auto rounded-lg bg-slate-900 ease-in-out duration-300 p-1 border border-slate-500/30 relative '>
+    <div className='flex flex-col justify-between max-w-sm mx-auto rounded-lg bg-slate-900 ease-in-out duration-300 p-1 border border-green-500/ñ30 relative'>
       <Image
         src={image}
         alt={`Imagen del proyecto ${titulo}`}
@@ -28,8 +28,8 @@ export function ProyectCard ({
         */
       }
 
-      <div className=' bg-slate-900 mx-4 rounded-lg flex items-center gap-2 -mt-4 z-10 py-2 px-6 border border-slate-500/50'>
-        <h3 className='text-white text-base md:text-lg lg:text-xl font-black uppercase'>
+      <div className=' bg-slate-900 mx-4 rounded-lg flex items-center gap-2 -mt-4 z-10 py-2 px-6 border border-green-500/90'>
+        <h3 className='text-white tracking-wide text-base md:text-lg lg:text-xl font-black uppercase'>
           {titulo}
         </h3>
       </div>
