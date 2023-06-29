@@ -16,7 +16,8 @@ export function ProyectCard ({
         alt={`Imagen del proyecto ${titulo}`}
         width={150}
         height={100}
-        className='group-hover:blur-sm w-full object-cover rounded-md'
+        className='group-hover:blur-sm w-full object-cover rounded-md aspect-video'
+        priority
         unoptimized
       />
 

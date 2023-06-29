@@ -87,26 +87,32 @@ export function Header () {
               {/* {otra info} */}
               <div className='hidden md:flex lg:flex flex-grow justify-end items-center space-x-3'>
                 <a
-                  href="#"
+                  href="https://github.com/ivanosquis10"
                   className='rounded p-0.5 hover:scale-110'
                   aria-label='icono de redireccion a github'
                   title='Redirreción a Github'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   <FaGithub size={25} />
                 </a>
                 <a
-                  href="#"
+                  href="https://twitter.com/ivanosquis13"
                   className='rounded p-0.5 hover:scale-110'
                   aria-label='icono de redireccion a twitter'
                   title='Redirreción a Twitter'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   <FaTwitter size={25} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/iv%C3%A1n-rodr%C3%ADguez-web/"
                   className='rounded p-0.5 hover:scale-110'
-                  aria-label='icono de redireccion a twitter'
-                  title='Redirreción a Twitter'
+                  aria-label='icono de redireccion a Linkedin'
+                  title='Redirreción a Linkedin'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   <FaLinkedin size={25} />
                 </a>

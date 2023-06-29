@@ -25,7 +25,7 @@ export function Proyects () {
               titulo='Quiosco comida'
               descripcion='Página de compras de platillos de comida con carrito de compras'
               stack={['React', 'NextJS', 'Supabase', 'Tailwindcss', 'Fullstack']}
-              image='/img/quiosco.PNG'
+              image='/img/quiosco.webp'
               github='https://github.com/ivanosquis10/quiosco-tienda-supabase'
               demo='https://quiosco-tienda-supabase.vercel.app/'
             />
@@ -33,26 +33,26 @@ export function Proyects () {
             <ProyectCard
               titulo='control presupuesto'
               descripcion='Planifica tus presupuestos con está app y filtra por categorías'
-              stack={['React', 'ViteJS', 'Tailwindcss']}
-              image='/img/gastos.png'
-              github='https://github.com/ivanosquis10/control-presupuesto-proyecto'
-              demo='https://aesthetic-lolly-990a8f.netlify.app/'
+              stack={['React', 'ViteJS', 'Tailwindcss', 'Typescript']}
+              image='/img/manager-budget.webp'
+              github='https://github.com/ivanosquis10/budget-manager'
+              demo='https://budget-manager-three.vercel.app/'
             />
 
             <ProyectCard
-              titulo='cotizador criptomonedas'
-              descripcion='Cotiza el valor de tus cripto monedas preferidas con está app'
-              stack={['React', 'Router DOM', 'styledComp']}
-              image='/img/cripto.png'
-              github='https://github.com/ivanosquis10/proyecto-cotizacion-crypto'
-              demo='https://cerulean-cucurucho-e6c6c9.netlify.app/'
+              titulo='App planetas'
+              descripcion='Ve una lista de los planetas, junto a sus detalles e imágenes'
+              stack={['React', 'Typescript', 'tailwindcss', 'swr']}
+              image='/img/app-planets.webp'
+              github='https://github.com/ivanosquis10/planets-project'
+              demo='https://app-planets.vercel.app/'
             />
 
             <ProyectCard
               titulo='crud pacientes'
               descripcion='Página para llevar el control de pacientes veterinarios'
               stack={['React', 'ViteJS', 'Tailwindcss']}
-              image='/img/pacientesCrud.PNG'
+              image='/img/pacientesCrud.webp'
               github='https://github.com/ivanosquis10/patients-crud-react-udemy'
               demo='https://cute-unicorn-4c9a71.netlify.app/'
             />
@@ -61,7 +61,7 @@ export function Proyects () {
               titulo='cotizador seguros autos'
               descripcion='Cotiza el valor de seguros de autos dependiendo del modelo y año'
               stack={['React', 'ViteJS', 'Tailwindcss']}
-              image='/img/cotizadorcarros.png'
+              image='/img/cotizadorcarros.webp'
               github='https://github.com/ivanosquis10/autoinsurance-quotes-project'
               demo='https://autoinsurance-quotes-ivanosquis.vercel.app/'
             />
