@@ -9,6 +9,11 @@
   }
 }
 
+.pattern-dots {
+  background-image: radial-gradient(#00ffaa69 1.5px, transparent 1px);
+  background-size: calc(10 * 2px) calc(10 * 2px)
+}
+
 .span-badge {
   @apply font-semibold text-emerald-400
 }
