@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+  }
+}
+
+.span-badge {
+  @apply font-semibold text-emerald-400
+}
+
+.button-ligth-dark {
+  @apply flex items-center justify-center flex-1 gap-2 px-4 py-2 mt-3 font-semibold duration-300 ease-in-out shadow-md md:flex-none hover:bg-zinc-800/30 bg-zinc-200 hover:text-white text-black
+}
+
+.button-ligth {
+  @apply flex items-center justify-center flex-1 gap-2 px-4 py-2 mt-3 font-semibold duration-300 ease-in-out shadow-md md:flex-none bg-zinc-200 text-black
+}
+
+.button-dark {
+  @apply flex items-center justify-center flex-1 gap-2 px-4 py-1 mt-3 font-semibold duration-300 ease-in-out shadow md:flex-none bg-zinc-950/50 hover:bg-zinc-200 hover:text-black
+}
