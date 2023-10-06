@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { Heading } from '@/components'
+import { Heading, AboutCard } from '@/components'
 import { GitHubIcon, ArrowRightIcon } from '@/components/icons/Icons'
+import { SKILLS } from '@/constants'
 
 export const metadata = {
   title: 'Ivanosquis | About me',
@@ -8,52 +9,6 @@ export const metadata = {
 }
 
 export default function AboutMe() {
-  const skills = [
-    {
-      title: 'JavaScript',
-      logo: 'js'
-    },
-    {
-      title: 'TypeScript',
-      logo: 'typescript'
-    },
-    {
-      title: 'React',
-      logo: 'react'
-    },
-    {
-      title: 'NextJS',
-      logo: 'nextjs'
-    },
-    {
-      title: 'TailwindCSS',
-      logo: 'tailwind'
-    },
-    {
-      title: 'NodeJS',
-      logo: 'node'
-    },
-    {
-      title: 'ExpressJS',
-      logo: 'express'
-    },
-    {
-      title: 'MongoDB',
-      logo: 'mongodb'
-    },
-    {
-      title: 'Supabase',
-      logo: 'supabase'
-    },
-    {
-      title: 'Git',
-      logo: 'git'
-    },
-    {
-      title: 'ViteJS'
-    }
-  ]
-
   return (
     <section>
       <div
@@ -69,49 +24,36 @@ export default function AboutMe() {
         </div>
 
         <div className="grid grid-cols-1 gap-5 mt-6 md:grid-cols-2">
-
-          <div className='p-3 leading-relaxed transition-all border rounded-md border-zinc-800 hover:ring-2 hover:ring-emerald-600 bg-zinc-800/30'>
-            <Heading level={4}>
-
-              Educación
-            </Heading>
-
+          <AboutCard title={'Education'} level={4} >
             <p className='mt-3 text-zinc-200'>
-              More than a year ago, I obtained a TSU degree in computer science from Universidad Elias Calixto Pompa in Venezuela.
+              More than a year ago, I obtained a TSU degree in computer science from Elias Calixto Pompa in Venezuela.
             </p>
             <p className='mt-2 text-zinc-200'>
               I have obtained valuable certifications in specialized <span className='span-badge'>JavaScript and React</span> courses through recognized educational platforms such as Udemy, under the expert guidance of professor codigoconjuan, and Platzi.
             </p>
-          </div>
+          </AboutCard>
 
-          <div className='p-3 transition-all border rounded-md group border-zinc-800 hover:ring-2 hover:ring-emerald-600 bg-zinc-800/30'>
-            <Heading level={4}>Skills</Heading>
-
+          <AboutCard title={'Skills'} level={4} >
             <ul className='grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-3 mt-3'>
-              {skills.map((skill) => (
+              {SKILLS.map((skill) => (
                 <li key={skill.title} className='px-1 py-1 text-sm font-semibold text-center text-black rounded-lg cursor-pointer md:px-2 md:py-2 bg-zinc-100 '>
                   {skill.title}
                 </li>
               ))}
             </ul>
-          </div>
+          </AboutCard>
 
-          <div className='p-3 transition-all border rounded-md border-zinc-800 hover:ring-2 hover:ring-emerald-600 bg-zinc-800/30'>
-
-            <Heading level={4}>Contributions</Heading>
+          <AboutCard title={'Contributions'} level={4} >
             <p className='mt-3 leading-snug text-zinc-200'>
               Active in the <span className='span-badge'>GitHub</span> community, I passionately collaborate on various projects, gathering experience and helping other developers. Every contribution is a step towards collective and personal growth and strengthening our community.
             </p>
-            <a href='https://github.com/ivanosquis' target='_blank' rel='noreferrer' className='rounded-xl button-ligth hover:scale-95'>
+            <a href='https://github.com/ivanosquis10' target='_blank' rel='noreferrer' className='rounded-xl button-ligth hover:scale-95'>
               My activity
               <GitHubIcon />
             </a>
-          </div>
+          </AboutCard>
 
-          <div className='p-3 transition-all border rounded-md border-zinc-800 hover:ring-2 bg-zinc-800/30 hover:ring-emerald-600'>
-
-            <Heading level={4}>More about me</Heading>
-
+          <AboutCard title={'More about me'} level={4} >
             <ul className="mt-3 space-y-1 tracking-tighter list-disc list-inside text-zinc-300 ">
               <li>
                 {"I'm"} a guy <span className='span-badge'>proactive, responsible and committed</span> with my work.
@@ -126,8 +68,7 @@ export default function AboutMe() {
                 Passionate about football and videogames.
               </li>
             </ul>
-
-          </div>
+          </AboutCard>
 
           <div className='p-3 text-center transition-all border rounded-md md:col-span-2 border-zinc-800 hover:ring-2 bg-zinc-800/30 hover:ring-emerald-600'>
             <p className='mt-3 leading-snug text-zinc-200'>

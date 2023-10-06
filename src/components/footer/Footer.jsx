@@ -4,9 +4,6 @@ import { GitHubIcon, TwitterIcon } from '../icons/Icons'
 export const Footer = () => {
   return (
     <header className="w-full py-1 border-t border-zinc-800" name="header" id="header">
-      {/* <div className='absolute w-6 h-6 bg-green bottom-50'>
-
-      </div> */}
       <div className="flex items-center h-16 max-w-6xl gap-5 px-4 mx-auto md:px-0">
         <Link href="/"
           aria-label='logo del portafilio de Ivanosquis'
@@ -70,10 +67,10 @@ export const Footer = () => {
 
       <div className='flex items-center justify-between w-full max-w-6xl px-4 mx-auto text-white md:px-0'>
         <p className='text-sm opacity-70'>
-          made in 🇻🇪 | Ivan
+          made in 🇻🇪
         </p>
         <span className='text-sm opacity-70'>
-          {new Date().getFullYear()} ©
+          {new Date().getFullYear()} © All rights reserved.
         </span>
       </div>
     </header>

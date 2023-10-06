@@ -43,7 +43,7 @@ export default function Page() {
           <ContactCard
             url={'mailto:ivanosquis10.12@gmail.com'}
             icon={'email'}
-            title={'Gmail | ivanosquis10.12'}
+            title={'Gmail | ivanosquis10.12@gmail'}
             subtitle={'Send me an email'}
           />
 
@@ -60,7 +60,6 @@ export default function Page() {
             title={'LOL | ivanosquisxd_lol'}
             subtitle={'Add me and play lol if you want :)'}
           />
-
         </div>
       </div>
     </section>

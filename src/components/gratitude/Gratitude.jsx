@@ -22,14 +22,14 @@ export const Gratitude = () => {
 
         <div className="flex flex-col items-center justify-center w-full gap-2 mx-auto md:gap-4 md:max-w-xl md:flex-row">
 
-          <button className="w-full rounded-xl button-ligth hover:scale-105 md:flex-1">
+          <a href='https://twitter.com/ivanosquis13' target='_blank' rel="noreferrer" className="w-full rounded-xl button-ligth hover:scale-105 md:flex-1">
             <TwitterIcon />
             Follow me!
-          </button>
-          <button className="w-full rounded-xl button-ligth hover:scale-105 md:flex-1">
+          </a>
+          <a href='mailto:ivanosquis10.12@gmail.com' className="w-full rounded-xl button-ligth hover:scale-105 md:flex-1" target='_blank' rel="noreferrer">
             Email me!
             <EmailIcon />
-          </button>
+          </a>
         </div>
       </div>
     </section>
