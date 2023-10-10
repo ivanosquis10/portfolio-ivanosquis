@@ -4,11 +4,8 @@ export const ProjectCard = ({ title, description, image, stack, github, demo, ch
   return (
     <div className='relative grid gap-4 p-2 transition-all rounded-md shadow md:grid-cols-2 bg-zinc-950/30 hover:ring-2 hover:ring-emerald-500/50'>
 
-      {/* <div className='grid grid-rows-2'> */}
-      {/* <img src="/img/guitarla-home.png" alt="" width={500} height={500} className='object-cover object-center w-full rounded-md shadow aspect-video' /> */}
       <div className='h-[300px] rounded-md'>
-        <img src={image} alt={`image of ${title}`} width={500} height={500} className='object-cover object-center w-full h-full rounded-md md:object-cover aspect-auto' />
-        {/* </div> */}
+        <img src={image} alt={`image of ${title}`} width={300} height={300} className='object-cover object-center w-full h-full rounded-md aspect-auto' />
       </div>
 
       <div className={`grid grid-rows-2 p-4 rounded-md shadow bg-zinc-900 ${change ? 'md:order-first' : ''} `}>

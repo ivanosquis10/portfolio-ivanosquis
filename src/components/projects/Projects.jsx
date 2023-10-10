@@ -31,6 +31,16 @@ export const Projects = () => {
           github='https://github.com/ivanosquis10/planets-project'
           demo='https://app-planets.vercel.app/'
         />
+
+        <ProjectCard
+          title='Bolivarium Conversor'
+          description='Web application to convert rates from dollars to bolivars, and vice versa, a useful tool for Venezuelans. Information brought from an API and using shadcn.'
+          image='/img/bolivarium.webp'
+          stack={['react', 'typescript', 'nextjs', 'tailwind']}
+          github='https://github.com/ivanosquis10/bolivarium-conversor'
+          demo='https://bolivarium-conversor.vercel.app/'
+          change
+        />
       </div >
 
     </section >
