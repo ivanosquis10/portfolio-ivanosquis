@@ -14,28 +14,27 @@ export const Projects = () => {
         />
 
         <ProjectCard
-          title='budget-manager'
+          title='budget manager'
           description='Web application that allows you to manage your expenses in a very easy way, filter and edit them. Visualize your expenses depending on your budget.'
-          image='/img/manager-budget.webp'
+          image='/img/budget.webp'
           stack={['react', 'typescript', 'vitejs', 'tailwind']}
           github='https://github.com/ivanosquis10/budget-manager'
           demo='https://budget-manager-three.vercel.app/'
-          change
         />
 
-        <ProjectCard
+        {/* <ProjectCard
           title='planets app'
           description='Web page in charge of viewing various planetary information, using SWR technology for data fetching and cache management.'
           image='/img/app-planets.webp'
           stack={['react', 'typescript', 'vitejs', 'tailwind', 'swr']}
           github='https://github.com/ivanosquis10/planets-project'
           demo='https://app-planets.vercel.app/'
-        />
+        /> */}
 
         <ProjectCard
           title='Bolivarium Conversor'
           description='Web application to convert rates from dollars to bolivars, and vice versa, a useful tool for Venezuelans. Information brought from an API and using shadcn.'
-          image='/img/bolivarium.webp'
+          image='/img/bolivar.webp'
           stack={['react', 'typescript', 'nextjs', 'tailwind']}
           github='https://github.com/ivanosquis10/bolivarium-conversor'
           demo='https://bolivarium-conversor.vercel.app/'

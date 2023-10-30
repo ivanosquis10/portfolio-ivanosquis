@@ -3,9 +3,8 @@ import { ArrowRightIcon, GitHubIcon } from '../icons/Icons'
 export const ProjectCard = ({ title, description, image, stack, github, demo, change }) => {
   return (
     <div className='relative grid gap-4 p-2 transition-all rounded-md shadow md:grid-cols-2 bg-zinc-950/30 hover:ring-2 hover:ring-emerald-500/50'>
-
-      <div className='h-[300px] rounded-md'>
-        <img src={image} alt={`image of ${title}`} width={300} height={300} className='object-cover object-center w-full h-full rounded-md aspect-auto' />
+      <div className='md:h-[290px] rounded-md'>
+        <img src={image} alt={`image of ${title} project`} width={300} height={300} className='object-center w-full h-full rounded-md lg:object-cover aspect-auto' />
       </div>
 
       <div className={`grid grid-rows-2 p-4 rounded-md shadow bg-zinc-900 ${change ? 'md:order-first' : ''} `}>
@@ -42,6 +41,7 @@ export const ProjectCard = ({ title, description, image, stack, github, demo, ch
         </div>
 
       </div >
+
     </div >
   )
 }
