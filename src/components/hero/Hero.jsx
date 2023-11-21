@@ -2,13 +2,8 @@ import Link from 'next/link'
 import { HeartIcon, ArrowRightIconFilled } from '@/components/icons/Icons'
 
 export const Hero = () => {
-  // si tiene sticky navbar
-  /*
-  <div className='flex flex-1 max-w-[980px] flex-col items-start gap-2 px-4 pt-24 md:pt-28 md:px-0 pb-4 relative'>
-
-  */
   return (
-    <section className="flex items-center justify-between border-b border-zinc-800">
+    <section className="flex items-center justify-between border-b border-zinc-800 animate-fade">
       <div className='flex flex-1 max-w-[980px] flex-col items-start gap-2 px-4 pt-10 md:px-2 pb-4 relative'>
         <div className="inline-flex items-center text-sm font-medium rounded-md">
           <span className="text-sm sm:hidden">Hi, welcome to my portfolio!</span>

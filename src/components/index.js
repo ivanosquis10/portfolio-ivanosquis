@@ -9,3 +9,10 @@ export * from './about-card/about-card'
 export * from './gratitude/Gratitude'
 
 export * from './heading/heading'
+
+export * from './about/contributions'
+export * from './about/education'
+export * from './about/footer-about'
+export * from './about/header-about'
+export * from './about/more-about'
+export * from './about/skills'
