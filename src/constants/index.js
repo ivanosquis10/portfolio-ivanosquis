@@ -127,7 +127,7 @@ export const projects = [
     title: 'DevQuiz',
     description: 'DevQuiz is an interactive quiz developed with ViteJS, React and Tailwind CSS. It uses Zustand and React Router DOM for navigation and management :)',
     image: '/img/devquiz.webp',
-    stack: ['ViteJS', 'typescript', 'tailwind', 'react-router-dom'],
+    stack: ['vitejs', 'typescript', 'tailwind', 'react-router-dom'],
     github: 'https://github.com/ivanosquis10/js-quiz-zustand',
     demo: 'https://frontend-quizz.vercel.app/'
   }
