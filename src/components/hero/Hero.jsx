@@ -1,24 +1,26 @@
-import Link from 'next/link'
-import { HeartIcon, ArrowRightIconFilled } from '@/components/icons/Icons'
+import Link from "next/link"
 
-export const Hero = () => {
+import { ArrowRightIconFilled } from "@/components/icons/Icons"
+
+export function Hero() {
   return (
-    <section className="flex items-center justify-between border-b border-zinc-800 animate-fade">
-      <div className='flex flex-1 max-w-[980px] flex-col items-start gap-2 px-4 pt-10 md:px-2 pb-4 relative'>
-        <div className="inline-flex items-center text-sm font-medium rounded-md">
-          <span className="text-sm sm:hidden">Hi, welcome to my portfolio!</span>
-          <span className="hidden sm:inline sm:text-base">Hi, welcome to my portfolio</span>
-          <HeartIcon />
-        </div>
-        <h1 className="text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1] bg-gradient-to-bl from-white via-green-300 to-green-300 bg-clip-text text-transparent">Iván Rodríguez</h1>
+    <section className="flex animate-fade items-center justify-between border-b border-zinc-800">
+      <div className="relative flex max-w-[980px] flex-1 flex-col items-start gap-2 px-4 py-12 md:px-2">
+        <h1 className="mb-3 text-4xl font-bold leading-tight tracking-tighter md:text-6xl">
+          Hi, I'm <span className="text-emerald-400">Iván Rodríguez</span>
+        </h1>
 
-        <p className="max-w-[750px] text-lg sm:text-xl" data-br=":rdd:" data-brr="1">
-          {"I'm"} passionate <span className='font-bold text-transparent bg-gradient-to-bl from-zinc-100 via-green-500 to-zinc-200 bg-clip-text'>frontend developer</span> who creates websites and web applications for unique user experiences. I am proactive, constantly learning, and striving to improve.
+        <p className="text-base text-gray-300">
+          I&apos;m passionate{" "}
+          <span className="border-b-2 border-dotted border-emerald-400 font-bold">
+            Frontend Developer
+          </span>{" "}
+          who creates websites and web applications for unique user experiences. I&apos;m proactive,
+          constantly learning, and striving to improve.
         </p>
         <div className="relative my-1">
-
-          <Link href='contact' className="rounded-md button-ligth hover:scale-105">
-            {"Let's talk"}
+          <Link className="button-ligth rounded-md hover:scale-105" href="contact">
+            Let's talk
             <ArrowRightIconFilled />
           </Link>
         </div>
