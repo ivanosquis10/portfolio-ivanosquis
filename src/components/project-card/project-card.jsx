@@ -1,45 +1,54 @@
-import { ArrowRightIcon, GitHubIcon } from '../icons/Icons'
+import Link from "next/link"
+import { MapsArrowDiagonal } from "iconoir-react"
 
-export const ProjectCard = ({ title, description, image, stack, github, demo, change }) => {
+import { GitHubIcon } from "../icons/Icons"
+
+import { CardSpotlight } from "@/components"
+
+export function ProjectCard({ title, description, stack, github, demo }) {
   return (
-    <div className='relative grid gap-4 p-2 transition-all ease-in border rounded-md shadow-lg spotligth border-zinc-700/60 md:grid-cols-2 bg-zinc-800/30 ring-2 ring-transparent hover:ring-emerald-600'>
-
-      <div className='md:h-[290px] max-h-[290px] rounded-md z-50'>
-        <img src={image} alt={`image of ${title} project`} width={300} height={300} className='object-center w-full h-full rounded-md lg:object-cover aspect-auto' loading='lazy' title={`image of ${title}`} />
-      </div>
-
-      <div className={`z-50 grid grid-rows-2 p-4 rounded-md shadow bg-zinc-950/70 ${change ? 'md:order-first' : ''} `}>
-        <div className='space-y-2'>
-          <h3 className='text-3xl font-bold capitalize md:text-4xl'>{title}</h3>
-          <p className='text-sm opacity-80'>
-            {description}
-          </p>
-        </div >
-
-        <div className='mt-2'>
-          <h4 className='mb-2 text-xl font-bold capitalize'>stack</h4>
-          <ul className='flex items-center gap-2'>
+    <CardSpotlight className="rounded-md bg-zinc-800/30">
+      <div className="flex w-full flex-col p-4">
+        <div className="mb-2 flex items-center justify-between">
+          <h1 className="text-2xl font-semibold leading-none tracking-tight">{title}</h1>
+          <div className="flex items-center gap-2">
+            <Link href={demo} rel="noopener" target="_blank" title="Demo">
+              <MapsArrowDiagonal className="h-6 w-6 text-gray-400 transition-all hover:animate-waving-hand hover:text-gray-100" />
+            </Link>
+            <Link
+              className="text-gray-400 transition-all hover:text-gray-100 "
+              href={github}
+              rel="noopener"
+              target="_blank"
+              title="Repository"
+            >
+              <GitHubIcon />
+            </Link>
+          </div>
+        </div>
+        <p className="text-pretty text-sm text-gray-400">{description}</p>
+        <div className="mt-3 flex items-center justify-between">
+          <div className="flex items-center space-x-2">
             {stack.map((item) => (
-              <li className='p-1 rounded-md bg-zinc-800' key={item}>
-                <span className='sr-only'>{item} icon</span>
-                <img width={25} height={25} src={`/skillsImg/${item}.svg`} alt={`${item} icon`} className='object-cover w-6 md:w-7' title={item} loading='lazy' />
-              </li>
+              <div
+                key={item}
+                className="rounded border border-neutral-800 bg-neutral-900 px-2 py-1 font-mono text-xs"
+              >
+                <span className="sr-only">{item} icon</span>
+                <img
+                  alt={`${item} icon`}
+                  className="w-6 object-cover md:w-7"
+                  height={25}
+                  loading="lazy"
+                  src={`/skillsImg/${item}.svg`}
+                  title={item}
+                  width={25}
+                />
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
-
-        <div className='flex items-center gap-2 '>
-          <a href={github} target='_blank' rel='noopener noreferrer' className='rounded-md button-ligth hover:scale-105'>
-            Github
-            <GitHubIcon />
-          </a>
-          <a href={demo} target='_blank' rel='noopener noreferrer' className='rounded-md button-ligth hover:scale-105'>
-            Website
-            <ArrowRightIcon />
-          </a>
-        </div>
-
-      </div >
-    </div>
+      </div>
+    </CardSpotlight>
   )
 }

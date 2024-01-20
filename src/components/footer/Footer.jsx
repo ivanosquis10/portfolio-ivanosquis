@@ -1,29 +1,34 @@
-import Link from 'next/link'
-import { GitHubIcon, TwitterIcon } from '../icons/Icons'
+import Link from "next/link"
 
-export const Footer = () => {
+import { GitHubIcon, TwitterIcon } from "../icons/Icons"
+
+export function Footer() {
   return (
-    <header className="w-full py-1 border-t border-zinc-800" name="header" id="header">
-      <div className="flex items-center h-16 max-w-6xl gap-5 px-4 mx-auto md:px-0">
-        <Link href="/"
-          aria-label='logo del portafilio de Ivanosquis'
-          className='cursor-pointer'
-        >
-          <img src="https://avatars.githubusercontent.com/u/83567373?v=4"
-            alt="Iván Rodríguez profile picture"
-            width={40}
+    <header className="w-full border-t border-zinc-800 py-1" id="header" name="header">
+      <div className="mx-auto flex h-16 max-w-6xl items-center gap-5 px-4 md:px-0">
+        <Link aria-label="logo del portafilio de Ivanosquis" className="cursor-pointer" href="/">
+          <img
+            alt="Iván Rodríguez profile pic"
+            className="rounded-full"
             height={40}
-            className='rounded-full'
+            src="https://avatars.githubusercontent.com/u/83567373?v=4"
+            width={40}
           />
         </Link>
 
-        <div className="flex items-center justify-end flex-1 px-0 md:border-l border-zinc-700 md:justify-between md:pl-5">
+        <div className="flex flex-1 items-center justify-end border-zinc-700 px-0 md:justify-between md:border-l md:pl-5">
           <nav aria-label="Global" className="hidden md:block">
             <ul className="flex items-center gap-6 text-sm">
-              <Link href='contact' className="font-semibold tracking-wide transition-colors text-zinc-100 hover:text-zinc-100/80">
+              <Link
+                className="font-semibold tracking-wide text-zinc-100 transition-colors hover:text-zinc-100/80"
+                href="contact"
+              >
                 Contact
               </Link>
-              <Link href='about-me' className="font-semibold tracking-wide transition-colors text-zinc-100 hover:text-zinc-100/80">
+              <Link
+                className="font-semibold tracking-wide text-zinc-100 transition-colors hover:text-zinc-100/80"
+                href="about-me"
+              >
                 About me
               </Link>
             </ul>
@@ -31,45 +36,39 @@ export const Footer = () => {
 
           <div>
             <div className="flex items-center gap-1 md:gap-2">
-              <Link href='/contact' title='Redirect to Github' className='block md:hidden'
-              >
-                <div className="inline-flex items-center justify-center px-1 py-2 text-xs font-medium text-white transition-colors border rounded-md sm:text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border-zinc-600 md:border-transparent hover:bg-zinc-800 hover:text-accent-foreground">
+              <Link className="block md:hidden" href="/contact" title="Redirect to Github">
+                <div className="focus-visible:ring-ring inline-flex items-center justify-center rounded-md border border-zinc-600 px-1 py-2 text-xs font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 sm:text-sm md:border-transparent">
                   Contact
                 </div>
               </Link>
 
-              <Link href='/about-me' className='block md:hidden'
-              >
-                <div className="inline-flex items-center justify-center px-1 py-2 text-xs font-medium text-white transition-colors border rounded-md sm:text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border-zinc-600 md:border-transparent hover:bg-zinc-800 hover:text-accent-foreground">
+              <Link className="block md:hidden" href="/about-me">
+                <div className="focus-visible:ring-ring inline-flex items-center justify-center rounded-md border border-zinc-600 px-1 py-2 text-xs font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 sm:text-sm md:border-transparent">
                   About me
                 </div>
               </Link>
 
-              <a target="_blank" rel="noreferrer" href="https://twitter.com/ivanosquis13">
-                <div className="inline-flex items-center justify-center px-0 py-2 text-sm font-medium text-white transition-colors border rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border-zinc-600 md:border-transparent hover:bg-zinc-800 hover:text-accent-foreground h-9 w-9">
+              <a href="https://twitter.com/ivanosquis13" rel="noreferrer" target="_blank">
+                <div className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-600 px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent">
                   <TwitterIcon />
                   <span className="sr-only">Twitter or X</span>
                 </div>
               </a>
 
-              <a target="_blank" rel="noreferrer" href="https://github.com/ivanosquis10">
-                <div className="inline-flex items-center justify-center px-0 py-2 text-sm font-medium text-white transition-colors border rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border-zinc-600 md:border-transparent hover:bg-zinc-800 hover:text-accent-foreground h-9 w-9">
+              <a href="https://github.com/ivanosquis10" rel="noreferrer" target="_blank">
+                <div className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-600 px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent">
                   <GitHubIcon />
                   <span className="sr-only">Github</span>
                 </div>
               </a>
-
             </div>
-
           </div>
         </div>
       </div>
 
-      <div className='flex items-center justify-between w-full max-w-6xl px-4 mx-auto text-white md:px-0'>
-        <p className='text-sm opacity-70'>
-          made in 🇻🇪
-        </p>
-        <span className='text-sm opacity-70'>
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 text-white md:px-0">
+        <p className="text-sm opacity-70">made in 🇻🇪</p>
+        <span className="text-sm opacity-70">
           {new Date().getFullYear()} © All rights reserved.
         </span>
       </div>

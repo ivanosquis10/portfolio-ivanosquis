@@ -1,13 +1,14 @@
-import Link from 'next/link'
-import { ArrowRightIcon } from '@/components/icons/Icons'
+import Link from "next/link"
 
-export const FooterAbout = () => {
+import { ArrowRightIcon } from "@/components/icons/Icons"
+
+export function FooterAbout() {
   return (
-    <div className='p-3 text-center transition-all border rounded-md md:col-span-2 border-zinc-800 hover:ring-2 bg-zinc-800/30 hover:ring-emerald-600'>
-      <p className='mt-3 leading-snug text-zinc-200'>
+    <div className="rounded-md border border-zinc-800 bg-zinc-800/30 p-3 text-center transition-all hover:ring-2 hover:ring-emerald-600 md:col-span-2">
+      <p className="mt-3 leading-snug text-zinc-200">
         If you have any questions, suggestions or just want to say hello, feel free to contact me.
       </p>
-      <Link href='/contact' className='mx-auto rounded-xl md:w-1/4 button-ligth'>
+      <Link className="button-ligth mx-auto rounded-xl md:w-1/4" href="/contact">
         My social networks
         <ArrowRightIcon />
       </Link>

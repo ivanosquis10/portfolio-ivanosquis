@@ -1,31 +1,55 @@
 /* eslint-disable indent */
-import Head from 'next/head'
+import Head from "next/head"
 
 export function Seo() {
-   return (
-      <Head>
-         <meta name="description" content="Bienvenido a mi portafolio de programación, donde podrás encontrar proyectos desarrollados en React, Vite.js, NextJS, Tailwind CSS y otras tecnologías. ¡Mira mis trabajos y contáctame para colaborar en tu próximo proyecto!" />
-         <meta name="keywords" content="portafolio, programación, React, NextJS, Vite.js, Tailwind CSS, desarrollo frontend, colaboración, proyectos" />
-         <link rel="icon" type="image/svg+xml" href="/logo-iv-3.svg" />
-         <meta name="author" content="Ivanosquis | Ivan Rodriguez" />
-         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  return (
+    <Head>
+      <meta
+        content="Bienvenido a mi portafolio de programación, donde podrás encontrar proyectos desarrollados en React, Vite.js, NextJS, Tailwind CSS y otras tecnologías. ¡Mira mis trabajos y contáctame para colaborar en tu próximo proyecto!"
+        name="description"
+      />
+      <meta
+        content="portafolio, programación, React, NextJS, Vite.js, Tailwind CSS, desarrollo frontend, colaboración, proyectos"
+        name="keywords"
+      />
+      <link href="/logo-iv-3.svg" rel="icon" type="image/svg+xml" />
+      <meta content="Ivanosquis | Ivan Rodriguez" name="author" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-         <meta property="og:title" content="Ivanosquis - Desarrollador Frontend | Portafolio de Programación" />
-         <meta property="og:description" content="Ivanosquis es un desarrollador frontend especializado en React, Next.js, Vite.js, Tailwind CSS y otras tecnologías. Explora su portafolio y contáctalo para colaborar en tu próximo proyecto." />
-         <meta property="og:image" content="https://portfolio-ivanosquis-iv.vercel.app/logo-iv-3.svg" />
-         <meta property="og:url" content="https://portfolio-ivanosquis-iv.vercel.app/" />
-         <meta property="og:type" content="website" />
+      <meta
+        content="Ivanosquis - Desarrollador Frontend | Portafolio de Programación"
+        property="og:title"
+      />
+      <meta
+        content="Ivanosquis es un desarrollador frontend especializado en React, Next.js, Vite.js, Tailwind CSS y otras tecnologías. Explora su portafolio y contáctalo para colaborar en tu próximo proyecto."
+        property="og:description"
+      />
+      <meta
+        content="https://portfolio-ivanosquis-iv.vercel.app/logo-iv-3.svg"
+        property="og:image"
+      />
+      <meta content="https://portfolio-ivanosquis-iv.vercel.app/" property="og:url" />
+      <meta content="website" property="og:type" />
 
-         <meta name="twitter:card" content="summary_large_image" />
-         <meta name="twitter:title" content="Ivanosquis - Desarrollador Frontend | Portafolio de Programación" />
-         <meta name="twitter:description" content="Ivanosquis es un desarrollador frontend especializado en React, Next.js, Vite.js, Tailwind CSS y otras tecnologías. Explora su portafolio y contáctalo para colaborar en tu próximo proyecto." />
-         <meta name="twitter:image" content="https://portfolio-ivanosquis-iv.vercel.app/logo-iv-3.svg" />
-         <meta name="twitter:creator" content="@ivanosquis" />
-         <meta name="author" content="Ivan Rodriguez" />
-         <meta name="twitter:domain" content="portfolio-ivanosquis-iv.vercel.app"></meta>
-         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta content="summary_large_image" name="twitter:card" />
+      <meta
+        content="Ivanosquis - Desarrollador Frontend | Portafolio de Programación"
+        name="twitter:title"
+      />
+      <meta
+        content="Ivanosquis es un desarrollador frontend especializado en React, Next.js, Vite.js, Tailwind CSS y otras tecnologías. Explora su portafolio y contáctalo para colaborar en tu próximo proyecto."
+        name="twitter:description"
+      />
+      <meta
+        content="https://portfolio-ivanosquis-iv.vercel.app/logo-iv-3.svg"
+        name="twitter:image"
+      />
+      <meta content="@ivanosquis" name="twitter:creator" />
+      <meta content="Ivan Rodriguez" name="author" />
+      <meta content="portfolio-ivanosquis-iv.vercel.app" name="twitter:domain" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-         <title>Ivanosquis Portafolio | Frontend</title>
-      </Head>
-   )
+      <title>Ivanosquis Portafolio | Frontend</title>
+    </Head>
+  )
 }
