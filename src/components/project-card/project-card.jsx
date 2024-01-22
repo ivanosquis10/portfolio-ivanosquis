@@ -10,7 +10,7 @@ export function ProjectCard({ title, description, stack, github, demo }) {
     <CardSpotlight className="rounded-md bg-zinc-800/30">
       <div className="flex w-full flex-col p-4">
         <div className="mb-2 flex items-center justify-between">
-          <h1 className="text-2xl font-semibold leading-none tracking-tight">{title}</h1>
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">{title}</h2>
           <div className="flex items-center gap-2">
             <Link href={demo} rel="noopener" target="_blank" title="Demo">
               <MapsArrowDiagonal className="h-6 w-6 text-gray-400 transition-all hover:animate-waving-hand hover:text-gray-100" />
