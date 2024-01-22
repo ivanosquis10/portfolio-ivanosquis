@@ -32,14 +32,14 @@ export function Header() {
           <div>
             <div className="flex items-center gap-1 md:gap-2">
               <Link
-                className="focus-visible:ring-ring inline-flex items-center justify-center rounded-md border border-zinc-600 px-1 py-2 text-xs font-medium text-gray-300 transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 sm:text-sm md:hidden md:border-transparent"
+                className="focus-visible:ring-ring inline-flex items-center justify-center rounded-md px-1 py-2 text-xs font-medium text-gray-200 transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 sm:text-sm md:hidden md:border-transparent"
                 href="/contact"
               >
                 Contact
               </Link>
 
               <Link
-                className="focus-visible:ring-ring inline-flex items-center justify-center rounded-md border border-zinc-600 px-1 py-2 text-xs font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 sm:text-sm md:hidden md:border-transparent"
+                className="focus-visible:ring-ring inline-flex items-center justify-center rounded-md px-1 py-2 text-xs font-medium text-gray-200 transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 sm:text-sm md:hidden md:border-transparent"
                 href="/about-me"
               >
                 About me
@@ -47,7 +47,7 @@ export function Header() {
 
               <Link
                 aria-label="github redirection icon"
-                className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-600 px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent md:text-gray-300"
+                className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent md:text-gray-300"
                 href="https://github.com/ivanosquis10"
                 rel="noreferrer"
                 target="_blank"
@@ -59,7 +59,7 @@ export function Header() {
 
               <Link
                 aria-label="linkedin redirection icon"
-                className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-600 px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent md:text-gray-300"
+                className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent md:text-gray-300"
                 href="https://www.linkedin.com/in/iv%C3%A1n-rodr%C3%ADguez-web/"
                 rel="noreferrer"
                 target="_blank"
@@ -71,7 +71,7 @@ export function Header() {
 
               <Link
                 aria-label="twitter redirection icon"
-                className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-600 px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent md:text-gray-300"
+                className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent md:text-gray-300"
                 href="https://twitter.com/ivanosquis13"
                 rel="noreferrer"
                 target="_blank"
