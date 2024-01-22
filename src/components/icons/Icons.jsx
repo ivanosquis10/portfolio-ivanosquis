@@ -223,3 +223,32 @@ export function ArrowRightIconFilled({ w = 24, h = 24 }) {
     </svg>
   )
 }
+
+export function ArrowUpIcon({ w = 24, h = 24 }) {
+  return (
+    <svg
+      color="currentColor"
+      fill="none"
+      height={h}
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+      width={w}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 11L12 5L18 11"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M6 19L12 13L18 19"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      />
+    </svg>
+  )
+}

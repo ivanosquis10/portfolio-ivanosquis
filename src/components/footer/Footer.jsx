@@ -1,12 +1,19 @@
 import Link from "next/link"
 
-import { GitHubIcon, TwitterIcon } from "../icons/Icons"
+import { GitHubIcon, TwitterIcon, ArrowUpIcon } from "../icons/Icons"
 
 export function Footer() {
   return (
     <header className="w-full border-t border-zinc-800 py-1" id="header" name="header">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-5 px-4 md:px-0">
-        <Link aria-label="logo del portafilio de Ivanosquis" className="cursor-pointer" href="/">
+        <Link
+          aria-label="logo del portafilio de Ivanosquis"
+          className="cursor-pointer rounded-full shadow-md"
+          href="https://www.linkedin.com/in/iv%C3%A1n-rodr%C3%ADguez-web/"
+          rel="noreferrer"
+          target="_blank"
+          title="Go to LinkedIn"
+        >
           <img
             alt="Iván Rodríguez profile pic"
             className="rounded-full"
@@ -36,31 +43,36 @@ export function Footer() {
 
           <div>
             <div className="flex items-center gap-1 md:gap-2">
-              <Link className="block md:hidden" href="/contact" title="Redirect to Github">
-                <div className="focus-visible:ring-ring inline-flex items-center justify-center rounded-md border border-zinc-600 px-1 py-2 text-xs font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 sm:text-sm md:border-transparent">
-                  Contact
-                </div>
-              </Link>
-
-              <Link className="block md:hidden" href="/about-me">
-                <div className="focus-visible:ring-ring inline-flex items-center justify-center rounded-md border border-zinc-600 px-1 py-2 text-xs font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 sm:text-sm md:border-transparent">
-                  About me
-                </div>
-              </Link>
-
-              <a href="https://twitter.com/ivanosquis13" rel="noreferrer" target="_blank">
-                <div className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-600 px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent">
-                  <TwitterIcon />
-                  <span className="sr-only">Twitter or X</span>
-                </div>
+              <a
+                className="inline-flex items-center justify-center rounded-md px-2 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus:outline-none focus:ring-1"
+                href="https://twitter.com/ivanosquis13"
+                rel="noreferrer"
+                target="_blank"
+                title="Redirect to Twitter"
+              >
+                <TwitterIcon />
+                <span className="sr-only">Twitter or X</span>
               </a>
 
-              <a href="https://github.com/ivanosquis10" rel="noreferrer" target="_blank">
-                <div className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-600 px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent">
-                  <GitHubIcon />
-                  <span className="sr-only">Github</span>
-                </div>
+              <a
+                className="inline-flex items-center justify-center rounded-md px-2 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus:outline-none focus:ring-1"
+                href="https://github.com/ivanosquis10"
+                rel="noreferrer"
+                target="_blank"
+                title="Redirect to Github"
+              >
+                <GitHubIcon />
+                <span className="sr-only">Github</span>
               </a>
+
+              <Link
+                className="inline-flex items-center justify-center rounded-md px-2 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-accent-foreground focus:outline-none focus:ring-1"
+                href="#header"
+                title="Back to top"
+              >
+                <ArrowUpIcon />
+                <span className="sr-only">Github</span>
+              </Link>
             </div>
           </div>
         </div>
