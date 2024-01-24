@@ -1,5 +1,5 @@
 import { ContactCard, Heading } from "@/components"
-import { contactInformation } from "@/constants"
+import { contact } from "@/data"
 
 export const metadata = {
   title: "Ivanosquis | Contact",
@@ -25,7 +25,7 @@ export default function Page() {
       </div>
 
       <div className="mx-auto mt-6 grid max-w-4xl animate-fade-up grid-cols-1 gap-5 md:grid-cols-2">
-        {contactInformation.map(({ id, url, icon, title, subtitle }) => (
+        {contact.map(({ id, url, icon, title, subtitle }) => (
           <ContactCard key={id} icon={icon} subtitle={subtitle} title={title} url={url} />
         ))}
       </div>
