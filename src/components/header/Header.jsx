@@ -61,7 +61,7 @@ export function Header() {
           <Link aria-label="logo redirection icon" className="cursor-pointer rounded-lg" href="/">
             <img
               alt="Ivanosquis logo"
-              className="rounded-lg border border-zinc-700 transition-all duration-300 hover:ring-2 hover:ring-green-500"
+              className="h-12 w-12 rounded-lg border border-zinc-700 transition-all duration-300 hover:ring-2 hover:ring-green-500 md:h-10 md:w-10"
               height={35}
               src="/avatar.webp"
               width={35}

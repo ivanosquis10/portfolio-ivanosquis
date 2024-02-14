@@ -24,7 +24,7 @@ export function Hero() {
 
         <div className="relative mt-2 w-full md:ml-2">
           <Link
-            className="focus:ring-zinc-emerald-400 group relative inline-flex w-full items-center justify-center overflow-hidden rounded-lg bg-zinc-100 px-5 py-2 font-bold text-black duration-500 hover:scale-95 hover:ring-4 hover:ring-emerald-400 focus:outline-none focus:ring-2"
+            className="focus:ring-zinc-emerald-400 group relative inline-flex w-full items-center justify-center overflow-hidden rounded-lg bg-zinc-100 px-5 py-2 font-bold text-black duration-500 hover:scale-95 hover:ring-4 hover:ring-emerald-400 focus:outline-none focus:ring-2 md:w-1/4"
             href="contact"
           >
             <span className="translate-x-0 opacity-100 transition group-hover:-translate-x-[150%] group-hover:opacity-0">
