@@ -1,88 +1,97 @@
 import Link from "next/link"
+import { Github, Twitter, Linkedin } from "iconoir-react"
 
-import { GitHubIcon, LinkedInIcon, TwitterIcon } from "../icons/Icons"
+import { cn } from "@/libs/utils"
+import { headerLinks } from "@/data"
 
 export function Header() {
+  const iconSize = 23
+  const stroke = "2.5"
+  const className = "text-gray-400 transition-all duration-150"
+
+  const socialLinks = [
+    {
+      id: 1,
+      name: "Twitter",
+      href: "https://twitter.com/ivanosquis13",
+      icon: (
+        <Twitter
+          className={cn(className, "hover:text-blue-300")}
+          height={iconSize}
+          name="Twitter"
+          stroke={stroke}
+          width={iconSize}
+        />
+      ),
+    },
+    {
+      id: 2,
+      name: "GitHub",
+      href: "https://github.com/ivanosquis10",
+      icon: (
+        <Github
+          className={cn(className, "hover:text-gray-300")}
+          height={iconSize}
+          name="GitHub"
+          stroke={stroke}
+          width={iconSize}
+        />
+      ),
+    },
+    {
+      id: 3,
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/iv%C3%A1n-rodr%C3%ADguez-web/",
+      icon: (
+        <Linkedin
+          className={cn(className, "hover:text-blue-600")}
+          height={iconSize}
+          name="LinkedIn"
+          stroke={stroke}
+          width={iconSize}
+        />
+      ),
+    },
+  ]
+
   return (
-    <header className="w-full bg-zinc-800/50" id="header" name="header">
-      <div className="mx-auto flex h-16 max-w-6xl items-center gap-5 px-4 md:px-0">
-        <Link aria-label="logo redirection icon" className="cursor-pointer" href="/">
-          <img alt="Ivanosquis logo" height={50} src="/logo.svg" width={50} />
-        </Link>
-
-        <div className="flex flex-1 items-center justify-end border-zinc-700 px-0 md:justify-between md:border-l md:pl-5">
-          {/* {nav desktop} */}
-          <nav aria-label="Global" className="hidden md:block">
-            <ul className="flex items-center gap-6 text-sm">
-              <Link
-                className="font-semibold tracking-wide text-gray-200 transition-colors hover:text-white"
-                href="contact"
-              >
-                Contact
-              </Link>
-              <Link
-                className="font-semibold tracking-wide text-gray-200 transition-colors hover:text-white"
-                href="about-me"
-              >
-                About me
-              </Link>
-            </ul>
-          </nav>
-
-          <div>
-            <div className="flex items-center gap-1 md:gap-2">
-              <Link
-                className="focus-visible:ring-ring inline-flex items-center justify-center rounded-md px-1 py-2 text-xs font-medium text-gray-200 transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 sm:text-sm md:hidden md:border-transparent"
-                href="/contact"
-              >
-                Contact
-              </Link>
-
-              <Link
-                className="focus-visible:ring-ring inline-flex items-center justify-center rounded-md px-1 py-2 text-xs font-medium text-gray-200 transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 sm:text-sm md:hidden md:border-transparent"
-                href="/about-me"
-              >
-                About me
-              </Link>
-
-              <Link
-                aria-label="github redirection icon"
-                className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent md:text-gray-300"
-                href="https://github.com/ivanosquis10"
-                rel="noreferrer"
-                target="_blank"
-                title="Redirect to Github"
-              >
-                <GitHubIcon h={26} w={26} />
-                <span className="sr-only">GitHub</span>
-              </Link>
-
-              <Link
-                aria-label="linkedin redirection icon"
-                className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent md:text-gray-300"
-                href="https://www.linkedin.com/in/iv%C3%A1n-rodr%C3%ADguez-web/"
-                rel="noreferrer"
-                target="_blank"
-                title="Redirect to linkedin"
-              >
-                <LinkedInIcon h={26} w={26} />
-                <span className="sr-only">linkedin</span>
-              </Link>
-
-              <Link
-                aria-label="twitter redirection icon"
-                className="focus-visible:ring-ring inline-flex h-9 w-9 items-center justify-center rounded-md px-0 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:border-transparent md:text-gray-300"
-                href="https://twitter.com/ivanosquis13"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <TwitterIcon h={26} w={26} />
-                <span className="sr-only">Twitter or X</span>
-              </Link>
+    <div className="top-0 z-40 w-full bg-zinc-900/50 py-3 font-medium backdrop-blur md:sticky">
+      <div className="mx-auto max-w-6xl p-4 md:p-0">
+        <div className="flex w-full flex-col items-center justify-between md:flex-row">
+          <Link aria-label="logo redirection icon" className="cursor-pointer rounded-lg" href="/">
+            <img
+              alt="Ivanosquis logo"
+              className="rounded-lg border border-zinc-700 transition-all duration-300 hover:ring-2 hover:ring-green-500"
+              height={35}
+              src="/avatar.webp"
+              width={35}
+            />
+            <span className="sr-only">Ivanosquis</span>
+          </Link>
+          <div className="mt-3 flex flex-col items-center justify-center space-y-3 md:mt-0 md:flex-row md:space-x-7 md:space-y-0">
+            <div className="flex flex-row space-x-7">
+              {headerLinks.map((link) => (
+                <Link
+                  key={link.title}
+                  className="text-sm text-gray-400 transition-all duration-150 hover:text-gray-100"
+                  href={link.url}
+                >
+                  {link.url}
+                </Link>
+              ))}
+            </div>
+            <div>
+              <div className="flex items-center justify-center space-x-5 border-neutral-700 md:border-l md:pl-6">
+                {socialLinks.map((link) => (
+                  <Link key={link.title} href={link.href}>
+                    {link.icon}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
   )
 }

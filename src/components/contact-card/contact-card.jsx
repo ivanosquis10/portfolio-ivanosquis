@@ -1,19 +1,14 @@
-import {
-  GitHubIcon,
-  EmailIcon,
-  LinkedInIcon,
-  TwitterIcon,
-  DiscordIcon,
-  LolIcon,
-} from "@/components/icons/Icons"
+import { Twitter, Linkedin, Github, MailOut, Discord } from "iconoir-react"
+
+import { LolIcon } from "@/components/icons/Icons"
 
 export function ContactCard({ url, icon, title, subtitle }) {
   const icons = {
-    github: <GitHubIcon h={40} w={40} />,
-    email: <EmailIcon h={40} w={40} />,
-    linkedin: <LinkedInIcon h={40} w={40} />,
-    twitter: <TwitterIcon h={40} w={40} />,
-    discord: <DiscordIcon h={40} w={40} />,
+    github: <Github height={40} width={40} />,
+    email: <MailOut height={40} width={40} />,
+    linkedin: <Linkedin height={40} width={40} />,
+    twitter: <Twitter height={40} width={40} />,
+    discord: <Discord height={40} width={40} />,
     lol: <LolIcon h={40} w={40} />,
   }
 
@@ -24,9 +19,11 @@ export function ContactCard({ url, icon, title, subtitle }) {
       rel="noreferrer"
       target="_blank"
     >
-      <span className="text-emerald-500">{icons[icon]}</span>
+      <span className="text-emerald-600 transition-all duration-150 hover:scale-110 hover:text-emerald-500">
+        {icons[icon]}
+      </span>
       <div className="flex flex-col space-y-[3px]">
-        <h5 className="text-base font-semibold leading-none">{title}</h5>
+        <h5 className="text-base font-semibold leading-none tracking-wide">{title}</h5>
         <span className="text-sm leading-none opacity-60 md:text-base">{subtitle}</span>
       </div>
     </a>

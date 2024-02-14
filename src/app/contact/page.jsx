@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-8 text-white sm:px-6">
+    <section className="mx-auto max-w-6xl px-4 py-8 text-white sm:px-0">
       <div className="animate-fade-right">
         <span className="inline-block text-xl font-semibold leading-tight text-emerald-400">
           Let's talk
