@@ -7,6 +7,10 @@
     --accent: 216 34% 17%;
     --accent-foreground: 210 40% 98%;
   }
+
+  body {
+    cursor: default;
+  }
 }
 
 .pattern-dots {
@@ -23,7 +27,7 @@
 }
 
 .button-ligth {
-  @apply flex items-center justify-center flex-1 gap-2 px-4 py-2 mt-3 font-semibold duration-300 ease-in-out shadow-md md:flex-none bg-zinc-200 text-black
+  @apply flex items-center justify-center flex-1 gap-2 px-4 py-2 duration-300 ease-in-out shadow-md md:flex-none bg-zinc-200 text-black
 }
 
 .button-dark {

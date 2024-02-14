@@ -96,3 +96,7 @@ export const projects = [
     demo: "https://shortnosquisurl.vercel.app/",
   },
 ]
+
+export * from "./header-links"
+
+export * from "./social-links"

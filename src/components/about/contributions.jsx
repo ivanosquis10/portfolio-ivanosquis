@@ -1,5 +1,6 @@
+import { Github } from "iconoir-react"
+
 import { AboutCard } from "@/components"
-import { GitHubIcon } from "@/components/icons/Icons"
 
 export function Contributions() {
   return (
@@ -11,13 +12,13 @@ export function Contributions() {
         community.
       </p>
       <a
-        className="button-ligth rounded-xl"
+        className="group relative mt-2 inline-flex w-full items-center justify-center overflow-hidden rounded-xl bg-zinc-100 px-5 py-2 font-bold text-black shadow-md duration-500"
         href="https://github.com/ivanosquis10"
         rel="noreferrer"
         target="_blank"
       >
         My activity
-        <GitHubIcon />
+        <Github className="ml-1" height={25} strokeWidth={1.5} width={25} />
       </a>
     </AboutCard>
   )

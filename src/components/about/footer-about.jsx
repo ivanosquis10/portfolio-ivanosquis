@@ -1,6 +1,5 @@
 import Link from "next/link"
-
-import { ArrowRightIcon } from "@/components/icons/Icons"
+import { ShareAndroid } from "iconoir-react"
 
 export function FooterAbout() {
   return (
@@ -8,9 +7,12 @@ export function FooterAbout() {
       <p className="mt-3 leading-snug text-zinc-200">
         If you have any questions, suggestions or just want to say hello, feel free to contact me.
       </p>
-      <Link className="button-ligth mx-auto rounded-xl md:w-1/4" href="/contact">
-        My social networks
-        <ArrowRightIcon />
+      <Link
+        className="group relative mt-2 inline-flex w-full items-center justify-center overflow-hidden rounded-xl bg-zinc-100 px-5 py-2 font-bold text-black shadow-md duration-500 md:w-1/4"
+        href="/contact"
+      >
+        Social networks
+        <ShareAndroid className="ml-1" height={24} stroke="2.5" width={24} />
       </Link>
     </div>
   )
