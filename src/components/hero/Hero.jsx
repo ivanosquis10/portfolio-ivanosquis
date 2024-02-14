@@ -16,15 +16,15 @@ export function Hero() {
           Hi, I'm Iván Rodríguez
         </h1>
 
-        <p className="text-pretty text-4xl font-extrabold md:text-6xl">
+        <p className="text-pretty text-5xl font-extrabold md:text-6xl">
           I build <span className="text-emerald-300">Products.</span>{" "}
           <span className="text-pink-300">Systems</span> for web. Passionate about development and
           life.
         </p>
 
-        <div className="relative mt-2 md:ml-2">
+        <div className="relative mt-2 w-full md:ml-2">
           <Link
-            className="focus:ring-zinc-emerald-400 group relative inline-flex w-44 items-center justify-center overflow-hidden rounded-lg bg-zinc-100 px-5 py-2 font-bold text-black duration-500 hover:scale-95 hover:ring-4 hover:ring-emerald-400 focus:outline-none focus:ring-2"
+            className="focus:ring-zinc-emerald-400 group relative inline-flex w-full items-center justify-center overflow-hidden rounded-lg bg-zinc-100 px-5 py-2 font-bold text-black duration-500 hover:scale-95 hover:ring-4 hover:ring-emerald-400 focus:outline-none focus:ring-2"
             href="contact"
           >
             <span className="translate-x-0 opacity-100 transition group-hover:-translate-x-[150%] group-hover:opacity-0">
