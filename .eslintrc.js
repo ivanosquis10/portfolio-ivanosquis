@@ -71,6 +71,7 @@ module.exports = {
     "@typescript-eslint/no-confusing-void-expression": "off",
     "@typescript-eslint/no-misused-promises": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
+    "prettier/prettier": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {

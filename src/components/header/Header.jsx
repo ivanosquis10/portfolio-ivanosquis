@@ -55,20 +55,24 @@ export function Header() {
   ]
 
   return (
-    <div className="top-0 z-40 w-full bg-zinc-900/50 py-3 font-medium backdrop-blur md:sticky">
-      <div className="mx-auto max-w-6xl p-4 md:p-0">
-        <div className="flex w-full flex-col items-center justify-between md:flex-row">
-          <Link aria-label="logo redirection icon" className="cursor-pointer rounded-lg" href="/">
+    <div className="top-0 z-40 w-full py-3 font-medium bg-zinc-900/50 backdrop-blur md:sticky">
+      <div className="max-w-6xl p-4 mx-auto md:p-0">
+        <div className="flex flex-col items-center justify-between w-full md:flex-row">
+          <Link
+            aria-label="logo redirection icon"
+            className="rounded-lg cursor-pointer"
+            href="/"
+          >
             <img
               alt="Ivanosquis logo"
-              className="h-12 w-12 rounded-lg border border-zinc-700 transition-all duration-300 hover:ring-2 hover:ring-green-500 md:h-10 md:w-10"
+              className="w-12 h-12 transition-all duration-300 border rounded-lg border-zinc-700 hover:ring-2 hover:ring-green-500 md:h-10 md:w-10"
               height={35}
               src="/avatar.webp"
               width={35}
             />
             <span className="sr-only">Ivanosquis</span>
           </Link>
-          <div className="mt-3 flex flex-col items-center justify-center space-y-3 md:mt-0 md:flex-row md:space-x-7 md:space-y-0">
+          <div className="flex flex-col items-center justify-center mt-3 space-y-3 md:mt-0 md:flex-row md:space-x-7 md:space-y-0">
             <div className="flex flex-row space-x-7">
               {headerLinks.map((link) => (
                 <Link
